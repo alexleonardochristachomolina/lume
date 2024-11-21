@@ -1,0 +1,243 @@
+export const snapshot = {};
+
+snapshot[`build a site with pug 1`] = `
+{
+  formats: [
+    {
+      engines: 0,
+      ext: ".page.toml",
+      loader: [AsyncFunction: toml],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".page.ts",
+      loader: [AsyncFunction: module],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".page.js",
+      loader: [AsyncFunction: module],
+      pageType: "page",
+    },
+    {
+      engines: 0,
+      ext: ".page.jsonc",
+      loader: [AsyncFunction: json],
+      pageType: "page",
+    },
+    {
+      engines: 0,
+      ext: ".page.json",
+      loader: [AsyncFunction: json],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: json],
+      engines: 0,
+      ext: ".json",
+      loader: [AsyncFunction: json],
+    },
+    {
+      dataLoader: [AsyncFunction: json],
+      engines: 0,
+      ext: ".jsonc",
+      loader: [AsyncFunction: json],
+    },
+    {
+      engines: 1,
+      ext: ".md",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".markdown",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: module],
+      engines: 1,
+      ext: ".js",
+      loader: [AsyncFunction: module],
+    },
+    {
+      dataLoader: [AsyncFunction: module],
+      engines: 1,
+      ext: ".ts",
+      loader: [AsyncFunction: module],
+    },
+    {
+      engines: 1,
+      ext: ".vento",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".vto",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: toml],
+      engines: 0,
+      ext: ".toml",
+      loader: [AsyncFunction: toml],
+    },
+    {
+      dataLoader: [AsyncFunction: yaml],
+      engines: 0,
+      ext: ".yaml",
+      loader: [AsyncFunction: yaml],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: yaml],
+      engines: 0,
+      ext: ".yml",
+      loader: [AsyncFunction: yaml],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".pug",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+  ],
+  src: [
+    "/",
+    "/_includes",
+    "/_includes/layout.pug",
+    "/_includes/layout2.pug",
+    "/extends.pug",
+    "/filter.pug",
+    "/layout.pug",
+  ],
+}
+`;
+
+snapshot[`build a site with pug 2`] = `[]`;
+
+snapshot[`build a site with pug 3`] = `
+[
+  {
+    content: '<!DOCTYPE html>
+<html class="no-js" lang="en"><head><meta charset="utf-8"/><title>Pug example</title></head><body><h1>Home</h1></body></html>',
+    data: {
+      basename: "extends",
+      children: '<html class="no-js" lang="en"><head><meta charset="utf-8"/><title>Pug example</title></head><body><h1>Home</h1></body></html>',
+      content: "extends /layout.pug
+block content
+  h1 Home
+",
+      date: [],
+      mergedKeys: [
+        "tags",
+      ],
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      title: "Pug example",
+      url: "/extends/",
+    },
+    src: {
+      asset: false,
+      ext: ".pug",
+      path: "/extends",
+      remote: undefined,
+    },
+  },
+  {
+    content: '<!DOCTYPE html>
+<html class="no-js" lang="en"><head><meta charset="utf-8"/><title>Markdown content</title></head><body><h1>This is a title</h1>
+<p>This is a paragraph</p>
+<ul>
+<li>Option 1</li>
+<li>Option 2</li>
+</ul><h1>Some dynamic content</h1></body></html>',
+    data: {
+      basename: "filter",
+      children: '<html class="no-js" lang="en"><head><meta charset="utf-8"/><title>Markdown content</title></head><body><h1>This is a title</h1>
+<p>This is a paragraph</p>
+<ul>
+<li>Option 1</li>
+<li>Option 2</li>
+</ul><h1>Some dynamic content</h1></body></html>',
+      content: 'extends ./_includes/layout.pug
+block content
+  :md
+    # This is a title
+
+    This is a paragraph
+
+    - Option 1
+    - Option 2
+
+  - const dynamicMd = "# Some dynamic content";
+  != filters.md(dynamicMd)
+',
+      date: [],
+      mergedKeys: [
+        "tags",
+      ],
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      title: "Markdown content",
+      url: "/article.html",
+    },
+    src: {
+      asset: false,
+      ext: ".pug",
+      path: "/filter",
+      remote: undefined,
+    },
+  },
+  {
+    content: '<!DOCTYPE html>
+<html class="no-js" lang="en"><head><meta charset="utf-8"/><title>Pug example</title></head><body><header><h1>Pug example</h1></header></body></html>',
+    data: {
+      basename: "layout",
+      children: "<header><h1>Pug example</h1></header>",
+      content: "header
+  h1 #{title}
+",
+      date: [],
+      layout: "layout2.pug",
+      mergedKeys: [
+        "tags",
+      ],
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      title: "Pug example",
+      url: "/layout/",
+    },
+    src: {
+      asset: false,
+      ext: ".pug",
+      path: "/layout",
+      remote: undefined,
+    },
+  },
+]
+`;

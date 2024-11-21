@@ -1,0 +1,23 @@
+---
+title: Título
+layout: layout.vto
+---
+
+<h1>{{ title }}</h1>
+
+{{ comp button {
+  href: "https://lume.land"
+} }}
+  Go to Lume
+{{ /comp }}
+
+{{ set href = "/" |> url(true) }}
+
+{{ comp container }}
+  {{ comp button {href, content: "Go to Lume"} /}}
+{{ /comp }}
+
+{{ "custom filter" |> upper }}
+
+<strong>{{ "title" |> fromPage }}</strong>
+<strong>{{ "title" |> await fromPageAsync }}</strong>

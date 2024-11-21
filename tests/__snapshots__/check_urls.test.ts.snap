@@ -1,0 +1,71 @@
+export const snapshot = {};
+
+snapshot[`check_urls plugin 1`] = `
+[
+  {
+    pages: [
+      "/",
+    ],
+    url: "/page1",
+  },
+  {
+    pages: [
+      "/",
+    ],
+    url: "/page1/",
+  },
+  {
+    pages: [
+      "/",
+    ],
+    url: "/page2",
+  },
+  {
+    pages: [
+      "/",
+    ],
+    url: "/page2/",
+  },
+]
+`;
+
+snapshot[`check_urls plugin (strict mode) 1`] = `
+[
+  {
+    pages: [
+      "/",
+    ],
+    url: "/page1",
+  },
+  {
+    pages: [
+      "/",
+    ],
+    url: "/page1/",
+  },
+  {
+    pages: [
+      "/",
+    ],
+    url: "/page2",
+  },
+  {
+    pages: [
+      "/",
+    ],
+    url: "/page2/",
+  },
+  {
+    pages: [
+      "/",
+    ],
+    url: "/page3",
+  },
+  {
+    pages: [
+      "/",
+    ],
+    url: "/page3/",
+  },
+]
+`;

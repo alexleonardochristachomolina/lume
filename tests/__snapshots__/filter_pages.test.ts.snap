@@ -1,0 +1,239 @@
+export const snapshot = {};
+
+snapshot[`Filter pages (allow only /multiple/*) 1`] = `
+{
+  formats: [
+    {
+      engines: 0,
+      ext: ".page.toml",
+      loader: [AsyncFunction: toml],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".page.ts",
+      loader: [AsyncFunction: module],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".page.js",
+      loader: [AsyncFunction: module],
+      pageType: "page",
+    },
+    {
+      engines: 0,
+      ext: ".page.jsonc",
+      loader: [AsyncFunction: json],
+      pageType: "page",
+    },
+    {
+      engines: 0,
+      ext: ".page.json",
+      loader: [AsyncFunction: json],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: json],
+      engines: 0,
+      ext: ".json",
+      loader: [AsyncFunction: json],
+    },
+    {
+      dataLoader: [AsyncFunction: json],
+      engines: 0,
+      ext: ".jsonc",
+      loader: [AsyncFunction: json],
+    },
+    {
+      engines: 1,
+      ext: ".md",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".markdown",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: module],
+      engines: 1,
+      ext: ".js",
+      loader: [AsyncFunction: module],
+    },
+    {
+      dataLoader: [AsyncFunction: module],
+      engines: 1,
+      ext: ".ts",
+      loader: [AsyncFunction: module],
+    },
+    {
+      engines: 1,
+      ext: ".vento",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".vto",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: toml],
+      engines: 0,
+      ext: ".toml",
+      loader: [AsyncFunction: toml],
+    },
+    {
+      dataLoader: [AsyncFunction: yaml],
+      engines: 0,
+      ext: ".yaml",
+      loader: [AsyncFunction: yaml],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: yaml],
+      engines: 0,
+      ext: ".yml",
+      loader: [AsyncFunction: yaml],
+      pageType: "page",
+    },
+  ],
+  src: [
+    "/",
+    "/_includes",
+    "/_includes/layout.js",
+    "/multiple-async.page.js",
+    "/multiple.page.js",
+    "/simple.page.js",
+  ],
+}
+`;
+
+snapshot[`Filter pages (allow only /multiple/*) 2`] = `[]`;
+
+snapshot[`Filter pages (allow only /multiple/*) 3`] = `
+[
+  {
+    content: '
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <title>Page 1</title>
+    </head>
+    <body>
+      <main>Content page 1</main>
+    </body>
+  </html>
+  ',
+    data: {
+      basename: "multiple",
+      children: "Content page 1",
+      content: "Content page 1",
+      date: [],
+      layout: "layout.js",
+      mergedKeys: [
+        "tags",
+      ],
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(1)",
+      title: "Page 1",
+      url: "/multiple/1.html",
+    },
+    src: {
+      asset: false,
+      ext: ".page.js",
+      path: "/multiple[0]",
+      remote: undefined,
+    },
+  },
+  {
+    content: '
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <title>Default title</title>
+    </head>
+    <body>
+      <main>Content page 2</main>
+    </body>
+  </html>
+  ',
+    data: {
+      basename: "multiple",
+      children: "Content page 2",
+      content: "Content page 2",
+      date: [],
+      layout: "layout.js",
+      mergedKeys: [
+        "tags",
+      ],
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(1)",
+      url: "/multiple/2.html",
+    },
+    src: {
+      asset: false,
+      ext: ".page.js",
+      path: "/multiple[1]",
+      remote: undefined,
+    },
+  },
+  {
+    content: '
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <title>Default title</title>
+    </head>
+    <body>
+      <main>Content page 3</main>
+    </body>
+  </html>
+  ',
+    data: {
+      basename: "multiple",
+      children: "Content page 3",
+      content: "Content page 3",
+      date: [],
+      layout: "layout.js",
+      mergedKeys: [
+        "tags",
+      ],
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(1)",
+      url: "/multiple/3.html",
+    },
+    src: {
+      asset: false,
+      ext: ".page.js",
+      path: "/multiple[2]",
+      remote: undefined,
+    },
+  },
+]
+`;

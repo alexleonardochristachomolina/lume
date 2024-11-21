@@ -1,0 +1,189 @@
+export const snapshot = {};
+
+snapshot[`terser plugin 1`] = `
+{
+  formats: [
+    {
+      engines: 0,
+      ext: ".page.toml",
+      loader: [AsyncFunction: toml],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".page.ts",
+      loader: [AsyncFunction: module],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".page.js",
+      loader: [AsyncFunction: module],
+      pageType: "page",
+    },
+    {
+      engines: 0,
+      ext: ".page.jsonc",
+      loader: [AsyncFunction: json],
+      pageType: "page",
+    },
+    {
+      engines: 0,
+      ext: ".page.json",
+      loader: [AsyncFunction: json],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: json],
+      engines: 0,
+      ext: ".json",
+      loader: [AsyncFunction: json],
+    },
+    {
+      dataLoader: [AsyncFunction: json],
+      engines: 0,
+      ext: ".jsonc",
+      loader: [AsyncFunction: json],
+    },
+    {
+      engines: 1,
+      ext: ".md",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".markdown",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      assetLoader: [AsyncFunction: text],
+      dataLoader: [AsyncFunction: module],
+      engines: 1,
+      ext: ".js",
+      loader: [AsyncFunction: module],
+      pageType: "asset",
+    },
+    {
+      dataLoader: [AsyncFunction: module],
+      engines: 1,
+      ext: ".ts",
+      loader: [AsyncFunction: module],
+    },
+    {
+      engines: 1,
+      ext: ".vento",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".vto",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: toml],
+      engines: 0,
+      ext: ".toml",
+      loader: [AsyncFunction: toml],
+    },
+    {
+      dataLoader: [AsyncFunction: yaml],
+      engines: 0,
+      ext: ".yaml",
+      loader: [AsyncFunction: yaml],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: yaml],
+      engines: 0,
+      ext: ".yml",
+      loader: [AsyncFunction: yaml],
+      pageType: "page",
+    },
+  ],
+  src: [
+    "/",
+    "/main.js",
+    "/numbers.vto",
+  ],
+}
+`;
+
+snapshot[`terser plugin 2`] = `[]`;
+
+snapshot[`terser plugin 3`] = `
+[
+  {
+    content: 'import{one as o,two as m}from"./numbers.js";console.log(o()+m());',
+    data: {
+      basename: "main",
+      content: 'import { one, two } from "./numbers.js";
+
+console.log(one() + two());
+',
+      date: [],
+      mergedKeys: [
+        "tags",
+      ],
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      url: "/main.js",
+    },
+    src: {
+      asset: true,
+      ext: ".js",
+      path: "/main",
+      remote: undefined,
+    },
+  },
+  {
+    content: "export function one(){return 1}export function two(){return 2}",
+    data: {
+      basename: "numbers",
+      content: "export function one () {
+  return {{ one }};
+}
+
+export function two () {
+  return {{ two }};
+}
+/*
+Commented code
+export function two () {
+  return {{ two }};
+}
+*/",
+      date: [],
+      mergedKeys: [
+        "tags",
+      ],
+      one: 1,
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      two: 2,
+      url: "/numbers.js",
+    },
+    src: {
+      asset: false,
+      ext: ".vto",
+      path: "/numbers",
+      remote: undefined,
+    },
+  },
+]
+`;

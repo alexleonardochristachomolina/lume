@@ -1,0 +1,831 @@
+export const snapshot = {};
+
+snapshot[`relative_url plugin 1`] = `
+{
+  formats: [
+    {
+      engines: 0,
+      ext: ".page.toml",
+      loader: [AsyncFunction: toml],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".page.ts",
+      loader: [AsyncFunction: module],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".page.js",
+      loader: [AsyncFunction: module],
+      pageType: "page",
+    },
+    {
+      engines: 0,
+      ext: ".page.jsonc",
+      loader: [AsyncFunction: json],
+      pageType: "page",
+    },
+    {
+      engines: 0,
+      ext: ".page.json",
+      loader: [AsyncFunction: json],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: json],
+      engines: 0,
+      ext: ".json",
+      loader: [AsyncFunction: json],
+    },
+    {
+      dataLoader: [AsyncFunction: json],
+      engines: 0,
+      ext: ".jsonc",
+      loader: [AsyncFunction: json],
+    },
+    {
+      engines: 1,
+      ext: ".md",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".markdown",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: module],
+      engines: 1,
+      ext: ".js",
+      loader: [AsyncFunction: module],
+    },
+    {
+      dataLoader: [AsyncFunction: module],
+      engines: 1,
+      ext: ".ts",
+      loader: [AsyncFunction: module],
+    },
+    {
+      engines: 1,
+      ext: ".vento",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".vto",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: toml],
+      engines: 0,
+      ext: ".toml",
+      loader: [AsyncFunction: toml],
+    },
+    {
+      dataLoader: [AsyncFunction: yaml],
+      engines: 0,
+      ext: ".yaml",
+      loader: [AsyncFunction: yaml],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: yaml],
+      engines: 0,
+      ext: ".yml",
+      loader: [AsyncFunction: yaml],
+      pageType: "page",
+    },
+  ],
+  src: [
+    "/",
+    "/articles",
+    "/articles/article-1.md",
+    "/articles/article-2.md",
+    "/articles/article-3.md",
+    "/index.md",
+    "/other.md",
+    "/statics",
+    "/statics/asset.md",
+    "/statics/robots.txt",
+    "/tílde-and-eñe.md",
+  ],
+}
+`;
+
+snapshot[`relative_url plugin 2`] = `
+[
+  {
+    entry: "/statics/asset.md",
+    flags: [],
+    outputPath: "/asset.md",
+  },
+  {
+    entry: "/statics/robots.txt",
+    flags: [],
+    outputPath: "/robots.txt",
+  },
+]
+`;
+
+snapshot[`relative_url plugin 3`] = `
+[
+  {
+    content: '<!DOCTYPE html>
+<html><head></head><body><p>First article</p>
+<p><a href="/drafts/second-article/">Go to second</a>
+<a href="/articles/third-article/">Go to third</a>
+<a href="/other/">Go to other</a>
+<a href="/">Go to index</a></p>
+</body></html>',
+    data: {
+      basename: "article-1",
+      children: '<!-- deno-fmt-ignore-file -->
+<p>First article</p>
+<p><a href="./article-2.md">Go to second</a>
+<a href="./article-3.md">Go to third</a>
+<a href="../other.md">Go to other</a>
+<a href="/index.md">Go to index</a></p>
+',
+      content: "<!-- deno-fmt-ignore-file -->
+
+First article
+
+[Go to second](./article-2.md)
+[Go to third](./article-3.md)
+[Go to other](../other.md)
+[Go to index](/index.md)",
+      date: [],
+      mergedKeys: [
+        "tags",
+      ],
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      url: "/articles/first-article/",
+    },
+    src: {
+      asset: false,
+      ext: ".md",
+      path: "/articles/article-1",
+      remote: undefined,
+    },
+  },
+  {
+    content: '<!DOCTYPE html>
+<html><head></head><body><p>Second article</p>
+<p><a href="/articles/first-article/">Go to first</a>
+<a href="/articles/third-article/">Go to third</a>
+<a href="/other/">Go to other</a>
+<a href="/">Go to index</a></p>
+</body></html>',
+    data: {
+      basename: "article-2",
+      children: '<!-- deno-fmt-ignore-file -->
+<p>Second article</p>
+<p><a href="article-1.md">Go to first</a>
+<a href="article-3.md">Go to third</a>
+<a href="../other.md">Go to other</a>
+<a href="/index.md">Go to index</a></p>
+',
+      content: "<!-- deno-fmt-ignore-file -->
+
+Second article
+
+[Go to first](article-1.md)
+[Go to third](article-3.md)
+[Go to other](../other.md)
+[Go to index](/index.md)",
+      date: [],
+      mergedKeys: [
+        "tags",
+      ],
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      url: "/drafts/second-article/",
+    },
+    src: {
+      asset: false,
+      ext: ".md",
+      path: "/articles/article-2",
+      remote: undefined,
+    },
+  },
+  {
+    content: '<!DOCTYPE html>
+<html><head></head><body><p>Third article</p>
+<p><a href="/drafts/second-article/">Go to second</a>
+<a href="/other/">Go to other</a>
+<a href="/">Go to index</a></p>
+</body></html>',
+    data: {
+      basename: "article-3",
+      children: '<!-- deno-fmt-ignore-file -->
+<p>Third article</p>
+<p><a href="./article-2.md">Go to second</a>
+<a href="../other.md">Go to other</a>
+<a href="/index.md">Go to index</a></p>
+',
+      content: "<!-- deno-fmt-ignore-file -->
+
+Third article
+
+[Go to second](./article-2.md)
+[Go to other](../other.md)
+[Go to index](/index.md)
+",
+      date: [],
+      mergedKeys: [
+        "tags",
+      ],
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      url: "/articles/third-article/",
+    },
+    src: {
+      asset: false,
+      ext: ".md",
+      path: "/articles/article-3",
+      remote: undefined,
+    },
+  },
+  {
+    content: '<!DOCTYPE html>
+<html><head></head><body><p><a href="/bar">url</a>
+<a href="foo">url</a>
+<a href="./foo">url</a>
+<a href="../foo">url</a>
+<a href="#foo">url</a>
+<a href="?foo=bar">url</a>
+<a href="/other/">url</a>
+<a href="/other/">url</a>
+<a href="https://domain.com">url</a>
+<a href="/other/?tab=1">url</a>
+<a href="/other/#tab-1">url</a>
+<a href="/robots.txt">url</a>
+<a href="/tilde-and-ene/">url</a>
+<a href="robots.txt">static-file</a>
+<a href="/asset.md">static-file</a></p>
+</body></html>',
+    data: {
+      basename: "index",
+      children: '<!-- deno-fmt-ignore-file -->
+<p><a href="/bar">url</a>
+<a href="foo">url</a>
+<a href="./foo">url</a>
+<a href="../foo">url</a>
+<a href="#foo">url</a>
+<a href="?foo=bar">url</a>
+<a href="~/other.md">url</a>
+<a href="other.md">url</a>
+<a href="https://domain.com">url</a>
+<a href="other.md?tab=1">url</a>
+<a href="other.md#tab-1">url</a>
+<a href="~/statics/robots.txt">url</a>
+<a href="t%C3%ADlde-and-e%C3%B1e.md">url</a>
+<a href="robots.txt">static-file</a>
+<a href="statics/asset.md">static-file</a></p>
+',
+      content: "<!-- deno-fmt-ignore-file -->
+[url](/bar)
+[url](foo)
+[url](./foo)
+[url](../foo)
+[url](#foo)
+[url](?foo=bar)
+[url](~/other.md)
+[url](other.md)
+[url](https://domain.com)
+[url](other.md?tab=1)
+[url](other.md#tab-1)
+[url](~/statics/robots.txt)
+[url](tílde-and-eñe.md)
+[static-file](robots.txt)
+[static-file](statics/asset.md)
+",
+      date: [],
+      mergedKeys: [
+        "tags",
+      ],
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      url: "/",
+    },
+    src: {
+      asset: false,
+      ext: ".md",
+      path: "/index",
+      remote: undefined,
+    },
+  },
+  {
+    content: '<!DOCTYPE html>
+<html><head></head><body><p>Other page</p>
+<p><a href="/robots.txt">See robots.txt</a></p>
+</body></html>',
+    data: {
+      basename: "other",
+      children: '<p>Other page</p>
+<p><a href="statics/robots.txt">See robots.txt</a></p>
+',
+      content: "Other page
+
+[See robots.txt](statics/robots.txt)
+",
+      date: [],
+      mergedKeys: [
+        "tags",
+      ],
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      url: "/other/",
+    },
+    src: {
+      asset: false,
+      ext: ".md",
+      path: "/other",
+      remote: undefined,
+    },
+  },
+  {
+    content: "<!DOCTYPE html>
+<html><head></head><body><p>Tilde and eñe</p>
+</body></html>",
+    data: {
+      basename: "tílde-and-eñe",
+      children: "<p>Tilde and eñe</p>
+",
+      content: "Tilde and eñe
+",
+      date: [],
+      mergedKeys: [
+        "tags",
+      ],
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      url: "/tilde-and-ene/",
+    },
+    src: {
+      asset: false,
+      ext: ".md",
+      path: "/tílde-and-eñe",
+      remote: undefined,
+    },
+  },
+]
+`;
+
+snapshot[`relative_url plugin (without slugify) 1`] = `
+{
+  formats: [
+    {
+      engines: 0,
+      ext: ".page.toml",
+      loader: [AsyncFunction: toml],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".page.ts",
+      loader: [AsyncFunction: module],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".page.js",
+      loader: [AsyncFunction: module],
+      pageType: "page",
+    },
+    {
+      engines: 0,
+      ext: ".page.jsonc",
+      loader: [AsyncFunction: json],
+      pageType: "page",
+    },
+    {
+      engines: 0,
+      ext: ".page.json",
+      loader: [AsyncFunction: json],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: json],
+      engines: 0,
+      ext: ".json",
+      loader: [AsyncFunction: json],
+    },
+    {
+      dataLoader: [AsyncFunction: json],
+      engines: 0,
+      ext: ".jsonc",
+      loader: [AsyncFunction: json],
+    },
+    {
+      engines: 1,
+      ext: ".md",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".markdown",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: module],
+      engines: 1,
+      ext: ".js",
+      loader: [AsyncFunction: module],
+    },
+    {
+      dataLoader: [AsyncFunction: module],
+      engines: 1,
+      ext: ".ts",
+      loader: [AsyncFunction: module],
+    },
+    {
+      engines: 1,
+      ext: ".vento",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".vto",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: toml],
+      engines: 0,
+      ext: ".toml",
+      loader: [AsyncFunction: toml],
+    },
+    {
+      dataLoader: [AsyncFunction: yaml],
+      engines: 0,
+      ext: ".yaml",
+      loader: [AsyncFunction: yaml],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: yaml],
+      engines: 0,
+      ext: ".yml",
+      loader: [AsyncFunction: yaml],
+      pageType: "page",
+    },
+  ],
+  src: [
+    "/",
+    "/articles",
+    "/articles/article-1.md",
+    "/articles/article-2.md",
+    "/articles/article-3.md",
+    "/index.md",
+    "/other.md",
+    "/statics",
+    "/statics/asset.md",
+    "/statics/robots.txt",
+    "/tílde-and-eñe.md",
+  ],
+}
+`;
+
+snapshot[`relative_url plugin (without slugify) 2`] = `
+[
+  {
+    entry: "/statics/asset.md",
+    flags: [],
+    outputPath: "/asset.md",
+  },
+  {
+    entry: "/statics/robots.txt",
+    flags: [],
+    outputPath: "/robots.txt",
+  },
+]
+`;
+
+snapshot[`relative_url plugin (without slugify) 3`] = `
+[
+  {
+    content: '<!DOCTYPE html>
+<html><head></head><body><p>First article</p>
+<p><a href="/drafts/second-article/">Go to second</a>
+<a href="/articles/third%20article/">Go to third</a>
+<a href="/other/">Go to other</a>
+<a href="/">Go to index</a></p>
+</body></html>',
+    data: {
+      basename: "article-1",
+      children: '<!-- deno-fmt-ignore-file -->
+<p>First article</p>
+<p><a href="./article-2.md">Go to second</a>
+<a href="./article-3.md">Go to third</a>
+<a href="../other.md">Go to other</a>
+<a href="/index.md">Go to index</a></p>
+',
+      content: "<!-- deno-fmt-ignore-file -->
+
+First article
+
+[Go to second](./article-2.md)
+[Go to third](./article-3.md)
+[Go to other](../other.md)
+[Go to index](/index.md)",
+      date: [],
+      mergedKeys: [
+        "tags",
+      ],
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      url: "/articles/first-article/",
+    },
+    src: {
+      asset: false,
+      ext: ".md",
+      path: "/articles/article-1",
+      remote: undefined,
+    },
+  },
+  {
+    content: '<!DOCTYPE html>
+<html><head></head><body><p>Second article</p>
+<p><a href="/articles/first-article/">Go to first</a>
+<a href="/articles/third%20article/">Go to third</a>
+<a href="/other/">Go to other</a>
+<a href="/">Go to index</a></p>
+</body></html>',
+    data: {
+      basename: "article-2",
+      children: '<!-- deno-fmt-ignore-file -->
+<p>Second article</p>
+<p><a href="article-1.md">Go to first</a>
+<a href="article-3.md">Go to third</a>
+<a href="../other.md">Go to other</a>
+<a href="/index.md">Go to index</a></p>
+',
+      content: "<!-- deno-fmt-ignore-file -->
+
+Second article
+
+[Go to first](article-1.md)
+[Go to third](article-3.md)
+[Go to other](../other.md)
+[Go to index](/index.md)",
+      date: [],
+      mergedKeys: [
+        "tags",
+      ],
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      url: "/drafts/second-article/",
+    },
+    src: {
+      asset: false,
+      ext: ".md",
+      path: "/articles/article-2",
+      remote: undefined,
+    },
+  },
+  {
+    content: '<!DOCTYPE html>
+<html><head></head><body><p>Third article</p>
+<p><a href="/drafts/second-article/">Go to second</a>
+<a href="/other/">Go to other</a>
+<a href="/">Go to index</a></p>
+</body></html>',
+    data: {
+      basename: "article-3",
+      children: '<!-- deno-fmt-ignore-file -->
+<p>Third article</p>
+<p><a href="./article-2.md">Go to second</a>
+<a href="../other.md">Go to other</a>
+<a href="/index.md">Go to index</a></p>
+',
+      content: "<!-- deno-fmt-ignore-file -->
+
+Third article
+
+[Go to second](./article-2.md)
+[Go to other](../other.md)
+[Go to index](/index.md)
+",
+      date: [],
+      mergedKeys: [
+        "tags",
+      ],
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      url: "/articles/third%20article/",
+    },
+    src: {
+      asset: false,
+      ext: ".md",
+      path: "/articles/article-3",
+      remote: undefined,
+    },
+  },
+  {
+    content: '<!DOCTYPE html>
+<html><head></head><body><p><a href="/bar">url</a>
+<a href="foo">url</a>
+<a href="./foo">url</a>
+<a href="../foo">url</a>
+<a href="#foo">url</a>
+<a href="?foo=bar">url</a>
+<a href="/other/">url</a>
+<a href="/other/">url</a>
+<a href="https://domain.com">url</a>
+<a href="/other/?tab=1">url</a>
+<a href="/other/#tab-1">url</a>
+<a href="/robots.txt">url</a>
+<a href="/tílde-and-eñe/">url</a>
+<a href="robots.txt">static-file</a>
+<a href="/asset.md">static-file</a></p>
+</body></html>',
+    data: {
+      basename: "index",
+      children: '<!-- deno-fmt-ignore-file -->
+<p><a href="/bar">url</a>
+<a href="foo">url</a>
+<a href="./foo">url</a>
+<a href="../foo">url</a>
+<a href="#foo">url</a>
+<a href="?foo=bar">url</a>
+<a href="~/other.md">url</a>
+<a href="other.md">url</a>
+<a href="https://domain.com">url</a>
+<a href="other.md?tab=1">url</a>
+<a href="other.md#tab-1">url</a>
+<a href="~/statics/robots.txt">url</a>
+<a href="t%C3%ADlde-and-e%C3%B1e.md">url</a>
+<a href="robots.txt">static-file</a>
+<a href="statics/asset.md">static-file</a></p>
+',
+      content: "<!-- deno-fmt-ignore-file -->
+[url](/bar)
+[url](foo)
+[url](./foo)
+[url](../foo)
+[url](#foo)
+[url](?foo=bar)
+[url](~/other.md)
+[url](other.md)
+[url](https://domain.com)
+[url](other.md?tab=1)
+[url](other.md#tab-1)
+[url](~/statics/robots.txt)
+[url](tílde-and-eñe.md)
+[static-file](robots.txt)
+[static-file](statics/asset.md)
+",
+      date: [],
+      mergedKeys: [
+        "tags",
+      ],
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      url: "/",
+    },
+    src: {
+      asset: false,
+      ext: ".md",
+      path: "/index",
+      remote: undefined,
+    },
+  },
+  {
+    content: '<!DOCTYPE html>
+<html><head></head><body><p>Other page</p>
+<p><a href="/robots.txt">See robots.txt</a></p>
+</body></html>',
+    data: {
+      basename: "other",
+      children: '<p>Other page</p>
+<p><a href="statics/robots.txt">See robots.txt</a></p>
+',
+      content: "Other page
+
+[See robots.txt](statics/robots.txt)
+",
+      date: [],
+      mergedKeys: [
+        "tags",
+      ],
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      url: "/other/",
+    },
+    src: {
+      asset: false,
+      ext: ".md",
+      path: "/other",
+      remote: undefined,
+    },
+  },
+  {
+    content: "<!DOCTYPE html>
+<html><head></head><body><p>Tilde and eñe</p>
+</body></html>",
+    data: {
+      basename: "tílde-and-eñe",
+      children: "<p>Tilde and eñe</p>
+",
+      content: "Tilde and eñe
+",
+      date: [],
+      mergedKeys: [
+        "tags",
+      ],
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      url: "/tílde-and-eñe/",
+    },
+    src: {
+      asset: false,
+      ext: ".md",
+      path: "/tílde-and-eñe",
+      remote: undefined,
+    },
+  },
+]
+`;

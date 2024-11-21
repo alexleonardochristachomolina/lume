@@ -1,0 +1,388 @@
+export const snapshot = {};
+
+snapshot[`render remote files 1`] = `
+{
+  formats: [
+    {
+      engines: 0,
+      ext: ".page.toml",
+      loader: [AsyncFunction: toml],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".page.ts",
+      loader: [AsyncFunction: module],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".page.js",
+      loader: [AsyncFunction: module],
+      pageType: "page",
+    },
+    {
+      engines: 0,
+      ext: ".page.jsonc",
+      loader: [AsyncFunction: json],
+      pageType: "page",
+    },
+    {
+      engines: 0,
+      ext: ".page.json",
+      loader: [AsyncFunction: json],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: json],
+      engines: 0,
+      ext: ".json",
+      loader: [AsyncFunction: json],
+    },
+    {
+      dataLoader: [AsyncFunction: json],
+      engines: 0,
+      ext: ".jsonc",
+      loader: [AsyncFunction: json],
+    },
+    {
+      engines: 1,
+      ext: ".md",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".markdown",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      assetLoader: [AsyncFunction: text],
+      dataLoader: [AsyncFunction: module],
+      engines: 1,
+      ext: ".js",
+      loader: [AsyncFunction: module],
+      pageType: "asset",
+    },
+    {
+      assetLoader: [AsyncFunction: text],
+      dataLoader: [AsyncFunction: module],
+      engines: 1,
+      ext: ".ts",
+      loader: [AsyncFunction: module],
+      pageType: "asset",
+    },
+    {
+      engines: 1,
+      ext: ".vento",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".vto",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: toml],
+      engines: 0,
+      ext: ".toml",
+      loader: [AsyncFunction: toml],
+    },
+    {
+      dataLoader: [AsyncFunction: yaml],
+      engines: 0,
+      ext: ".yaml",
+      loader: [AsyncFunction: yaml],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: yaml],
+      engines: 0,
+      ext: ".yml",
+      loader: [AsyncFunction: yaml],
+      pageType: "page",
+    },
+    {
+      assetLoader: [AsyncFunction: text],
+      engines: undefined,
+      ext: ".css",
+      pageType: "asset",
+    },
+    {
+      assetLoader: [AsyncFunction: text],
+      engines: undefined,
+      ext: ".scss",
+      pageType: "asset",
+    },
+    {
+      assetLoader: [AsyncFunction: text],
+      engines: undefined,
+      ext: ".sass",
+      pageType: "asset",
+    },
+    {
+      engines: 1,
+      ext: ".njk",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+  ],
+  src: [
+    "/",
+    "/_data.yml",
+    "/_includes",
+    "/_includes/hello.js",
+    "/_includes/name.js",
+    "/_includes/remote-style.css",
+    "/_includes/remote1.njk",
+    "/_includes/templates",
+    "/_includes/templates/local1.njk",
+    "/_includes/templates/remote-template2.njk",
+    "/_includes/variables.scss",
+    "/_remotes",
+    "/_remotes/_data.yml",
+    "/_remotes/asset.txt",
+    "/_remotes/hello.js",
+    "/_remotes/other-remote-style.css",
+    "/_remotes/remote-style.css",
+    "/_remotes/remote-template2.njk",
+    "/_remotes/remote1.njk",
+    "/_remotes/styles2.css",
+    "/_remotes/variables.scss",
+    "/asset.txt",
+    "/local1.md",
+    "/other-remote-style.css",
+    "/scripts.js",
+    "/styles1.css",
+    "/styles2.css",
+    "/styles3.scss",
+  ],
+}
+`;
+
+snapshot[`render remote files 2`] = `
+[
+  {
+    entry: "/asset.txt",
+    flags: [
+      "remote",
+    ],
+    outputPath: "/asset.txt",
+  },
+]
+`;
+
+snapshot[`render remote files 3`] = `
+[
+  {
+    content: "<!DOCTYPE html>
+<h1>Remote layout</h1>
+<h2>Remote title</h2>
+
+&lt;p&gt;Hello world&lt;/p&gt;
+
+
+This is a local template
+
+This is a remote template
+",
+    data: {
+      basename: "local1",
+      children: "<p>Hello world</p>
+",
+      content: "Hello world
+",
+      date: [],
+      layout: "remote1.njk",
+      mergedKeys: [
+        "tags",
+      ],
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      title: "Remote title",
+      url: "/local1/",
+    },
+    src: {
+      asset: false,
+      ext: ".md",
+      path: "/local1",
+      remote: undefined,
+    },
+  },
+  {
+    content: "/* Other remote style */
+body {
+  color: yellow;
+}
+",
+    data: {
+      basename: "other-remote-style",
+      content: "/* Other remote style */
+body {
+  color: yellow;
+}
+",
+      date: [],
+      mergedKeys: [
+        "tags",
+      ],
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      title: "Remote title",
+      url: "/other-remote-style.css",
+    },
+    src: {
+      asset: true,
+      ext: ".css",
+      path: "/other-remote-style",
+      remote: "assets/remote_files/_remotes/other-remote-style.css",
+    },
+  },
+  {
+    content: 'var r=Object.defineProperty;var e=(t,m)=>r(t,"name",{value:m,configurable:!0});var l="Name";function o(){console.log("hello",l)}e(o,"default");o();
+',
+    data: {
+      basename: "scripts",
+      content: 'import hello from "./_includes/hello.js";
+
+hello();
+',
+      date: [],
+      mergedKeys: [
+        "tags",
+      ],
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      title: "Remote title",
+      url: "/scripts.js",
+    },
+    src: {
+      asset: true,
+      ext: ".js",
+      path: "/scripts",
+      remote: undefined,
+    },
+  },
+  {
+    content: "/* Remote style */
+body {
+  color: red;
+}
+/* Other remote style */
+body {
+  color: yellow;
+}
+",
+    data: {
+      basename: "styles1",
+      content: '@import "remote-style.css";
+@import "./other-remote-style.css";
+',
+      date: [],
+      mergedKeys: [
+        "tags",
+      ],
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      title: "Remote title",
+      url: "/styles1.css",
+    },
+    src: {
+      asset: true,
+      ext: ".css",
+      path: "/styles1",
+      remote: undefined,
+    },
+  },
+  {
+    content: "body {
+  color: blue;
+}",
+    data: {
+      basename: "styles2",
+      content: "body {
+  color: blue;
+}",
+      date: [],
+      mergedKeys: [
+        "tags",
+      ],
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      title: "Remote title",
+      url: "/styles2.css",
+    },
+    src: {
+      asset: true,
+      ext: ".css",
+      path: "/styles2",
+      remote: "assets/remote_files/_remotes/styles2.css",
+    },
+  },
+  {
+    content: "body{color:blue}",
+    data: {
+      basename: "styles3",
+      content: '@use "variables" as *;
+
+body {
+  color: \$color;
+}
+',
+      date: [],
+      mergedKeys: [
+        "tags",
+      ],
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      title: "Remote title",
+      url: "/styles3.css",
+    },
+    src: {
+      asset: true,
+      ext: ".scss",
+      path: "/styles3",
+      remote: undefined,
+    },
+  },
+]
+`;

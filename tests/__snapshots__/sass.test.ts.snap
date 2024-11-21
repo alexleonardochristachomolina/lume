@@ -1,0 +1,203 @@
+export const snapshot = {};
+
+snapshot[`sass plugin 1`] = `
+{
+  formats: [
+    {
+      engines: 0,
+      ext: ".page.toml",
+      loader: [AsyncFunction: toml],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".page.ts",
+      loader: [AsyncFunction: module],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".page.js",
+      loader: [AsyncFunction: module],
+      pageType: "page",
+    },
+    {
+      engines: 0,
+      ext: ".page.jsonc",
+      loader: [AsyncFunction: json],
+      pageType: "page",
+    },
+    {
+      engines: 0,
+      ext: ".page.json",
+      loader: [AsyncFunction: json],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: json],
+      engines: 0,
+      ext: ".json",
+      loader: [AsyncFunction: json],
+    },
+    {
+      dataLoader: [AsyncFunction: json],
+      engines: 0,
+      ext: ".jsonc",
+      loader: [AsyncFunction: json],
+    },
+    {
+      engines: 1,
+      ext: ".md",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".markdown",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: module],
+      engines: 1,
+      ext: ".js",
+      loader: [AsyncFunction: module],
+    },
+    {
+      dataLoader: [AsyncFunction: module],
+      engines: 1,
+      ext: ".ts",
+      loader: [AsyncFunction: module],
+    },
+    {
+      engines: 1,
+      ext: ".vento",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".vto",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: toml],
+      engines: 0,
+      ext: ".toml",
+      loader: [AsyncFunction: toml],
+    },
+    {
+      dataLoader: [AsyncFunction: yaml],
+      engines: 0,
+      ext: ".yaml",
+      loader: [AsyncFunction: yaml],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: yaml],
+      engines: 0,
+      ext: ".yml",
+      loader: [AsyncFunction: yaml],
+      pageType: "page",
+    },
+    {
+      assetLoader: [AsyncFunction: text],
+      engines: undefined,
+      ext: ".scss",
+      pageType: "asset",
+    },
+    {
+      assetLoader: [AsyncFunction: text],
+      engines: undefined,
+      ext: ".sass",
+      pageType: "asset",
+    },
+  ],
+  src: [
+    "/",
+    "/_includes",
+    "/_includes/sass",
+    "/_includes/sass/_list.scss",
+    "/_includes/sass/bootstrap.scss",
+    "/_includes/sass/button",
+    "/_includes/sass/button/index.scss",
+    "/_includes/sass/colors.scss",
+    "/_includes/sass/third.scss",
+    "/index.scss",
+    "/index2.sass",
+    "/styles.css",
+  ],
+}
+`;
+
+snapshot[`sass plugin 2`] = `[]`;
+
+snapshot[`sass plugin 3`] = `
+[
+  {
+    content: '@import"./styles.css";html{scroll-behavior:smooth;font:100% Helvetica,sans-serif}body{font:100% Helvetica,sans-serif;color:#333}li{margin:0;padding:0;list-style:none}',
+    data: {
+      basename: "index",
+      content: '@use "sass/bootstrap";
+@use "sass/button";
+@use "./_includes/sass/colors";
+@import "./styles.css";
+
+li {
+  @include bootstrap.list-reset;
+}
+',
+      date: [],
+      mergedKeys: [
+        "tags",
+      ],
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      url: "/index.css",
+    },
+    src: {
+      asset: true,
+      ext: ".scss",
+      path: "/index",
+      remote: undefined,
+    },
+  },
+  {
+    content: "body{color:blue}",
+    data: {
+      basename: "index2",
+      content: '@use "sass/colors" as *
+
+body
+  color: \$primary-color
+',
+      date: [],
+      mergedKeys: [
+        "tags",
+      ],
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      url: "/index2.css",
+    },
+    src: {
+      asset: true,
+      ext: ".sass",
+      path: "/index2",
+      remote: undefined,
+    },
+  },
+]
+`;

@@ -1,0 +1,177 @@
+export const snapshot = {};
+
+snapshot[`build a site with eta 1`] = `
+{
+  formats: [
+    {
+      engines: 0,
+      ext: ".page.toml",
+      loader: [AsyncFunction: toml],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".page.ts",
+      loader: [AsyncFunction: module],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".page.js",
+      loader: [AsyncFunction: module],
+      pageType: "page",
+    },
+    {
+      engines: 0,
+      ext: ".page.jsonc",
+      loader: [AsyncFunction: json],
+      pageType: "page",
+    },
+    {
+      engines: 0,
+      ext: ".page.json",
+      loader: [AsyncFunction: json],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: json],
+      engines: 0,
+      ext: ".json",
+      loader: [AsyncFunction: json],
+    },
+    {
+      dataLoader: [AsyncFunction: json],
+      engines: 0,
+      ext: ".jsonc",
+      loader: [AsyncFunction: json],
+    },
+    {
+      engines: 1,
+      ext: ".md",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".markdown",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: module],
+      engines: 1,
+      ext: ".js",
+      loader: [AsyncFunction: module],
+    },
+    {
+      dataLoader: [AsyncFunction: module],
+      engines: 1,
+      ext: ".ts",
+      loader: [AsyncFunction: module],
+    },
+    {
+      engines: 1,
+      ext: ".vento",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".vto",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: toml],
+      engines: 0,
+      ext: ".toml",
+      loader: [AsyncFunction: toml],
+    },
+    {
+      dataLoader: [AsyncFunction: yaml],
+      engines: 0,
+      ext: ".yaml",
+      loader: [AsyncFunction: yaml],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: yaml],
+      engines: 0,
+      ext: ".yml",
+      loader: [AsyncFunction: yaml],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".eta",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+  ],
+  src: [
+    "/",
+    "/_includes",
+    "/_includes/footer.eta",
+    "/_includes/header.eta",
+    "/_includes/layout.eta",
+    "/index.eta",
+  ],
+}
+`;
+
+snapshot[`build a site with eta 2`] = `[]`;
+
+snapshot[`build a site with eta 3`] = `
+[
+  {
+    content: \`<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eta example</title>
+</head>
+<body>
+  <nav>
+    <a href="/blog/">Go to home</a>
+  </nav>
+  <h1>Timothy's Eta source code!</h1>
+
+<footer>This is a footer of Timothy</footer></body>
+</html>
+\`,
+    data: {
+      basename: "index",
+      children: "<h1>Timothy's Eta source code!</h1>
+
+<footer>This is a footer of Timothy</footer>",
+      content: \`<h1><%= name %>'s Eta source code!</h1>
+
+<%~ await includeAsync("/footer", { name }) %>
+\`,
+      date: [],
+      layout: "layout.eta",
+      mergedKeys: [
+        "tags",
+      ],
+      name: "Timothy",
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      title: "Eta example",
+      url: "/",
+    },
+    src: {
+      asset: false,
+      ext: ".eta",
+      path: "/index",
+      remote: undefined,
+    },
+  },
+]
+`;

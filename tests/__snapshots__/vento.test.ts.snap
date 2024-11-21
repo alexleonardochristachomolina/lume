@@ -1,0 +1,260 @@
+export const snapshot = {};
+
+snapshot[`build a site with vento 1`] = `
+{
+  formats: [
+    {
+      engines: 0,
+      ext: ".page.toml",
+      loader: [AsyncFunction: toml],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".page.ts",
+      loader: [AsyncFunction: module],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".page.js",
+      loader: [AsyncFunction: module],
+      pageType: "page",
+    },
+    {
+      engines: 0,
+      ext: ".page.jsonc",
+      loader: [AsyncFunction: json],
+      pageType: "page",
+    },
+    {
+      engines: 0,
+      ext: ".page.json",
+      loader: [AsyncFunction: json],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: json],
+      engines: 0,
+      ext: ".json",
+      loader: [AsyncFunction: json],
+    },
+    {
+      dataLoader: [AsyncFunction: json],
+      engines: 0,
+      ext: ".jsonc",
+      loader: [AsyncFunction: json],
+    },
+    {
+      engines: 1,
+      ext: ".md",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".markdown",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: module],
+      engines: 1,
+      ext: ".js",
+      loader: [AsyncFunction: module],
+    },
+    {
+      dataLoader: [AsyncFunction: module],
+      engines: 1,
+      ext: ".ts",
+      loader: [AsyncFunction: module],
+    },
+    {
+      engines: 1,
+      ext: ".vento",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".vto",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: toml],
+      engines: 0,
+      ext: ".toml",
+      loader: [AsyncFunction: toml],
+    },
+    {
+      dataLoader: [AsyncFunction: yaml],
+      engines: 0,
+      ext: ".yaml",
+      loader: [AsyncFunction: yaml],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: yaml],
+      engines: 0,
+      ext: ".yml",
+      loader: [AsyncFunction: yaml],
+      pageType: "page",
+    },
+  ],
+  src: [
+    "/",
+    "/_components",
+    "/_components/Button.vto",
+    "/_components/container.vto",
+    "/_includes",
+    "/_includes/footer.vto",
+    "/_includes/layout.vto",
+    "/index.vto",
+    "/vto-filter.page.js",
+  ],
+}
+`;
+
+snapshot[`build a site with vento 2`] = `[]`;
+
+snapshot[`build a site with vento 3`] = `
+[
+  {
+    content: '<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TÍTULO</title>
+</head>
+<body>
+  <h1>Título</h1>
+
+<a href="https://lume.land" class="btn btn-primary">
+  Go to Lume
+</a>
+
+
+
+
+<section class="container">
+  <a href="https://example.com/blog/" class="btn btn-primary">Go to Lume</a>
+
+</section>
+
+CUSTOM FILTER
+
+<strong>Título</strong>
+<strong>Título</strong>
+
+
+  <footer>
+Título
+</footer>
+</body>
+</html>
+',
+    data: {
+      basename: "index",
+      children: '<h1>Título</h1>
+
+<a href="https://lume.land" class="btn btn-primary">
+  Go to Lume
+</a>
+
+
+
+
+<section class="container">
+  <a href="https://example.com/blog/" class="btn btn-primary">Go to Lume</a>
+
+</section>
+
+CUSTOM FILTER
+
+<strong>Título</strong>
+<strong>Título</strong>
+',
+      comp: [
+        "_components",
+        "_proxies",
+      ],
+      content: '<h1>{{ title }}</h1>
+
+{{ comp button {
+  href: "https://lume.land"
+} }}
+  Go to Lume
+{{ /comp }}
+
+{{ set href = "/" |> url(true) }}
+
+{{ comp container }}
+  {{ comp button {href, content: "Go to Lume"} /}}
+{{ /comp }}
+
+{{ "custom filter" |> upper }}
+
+<strong>{{ "title" |> fromPage }}</strong>
+<strong>{{ "title" |> await fromPageAsync }}</strong>
+',
+      date: [],
+      layout: "layout.vto",
+      mergedKeys: [
+        "tags",
+      ],
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      title: "Título",
+      url: "/",
+    },
+    src: {
+      asset: false,
+      ext: ".vto",
+      path: "/index",
+      remote: undefined,
+    },
+  },
+  {
+    content: "<!DOCTYPE html>
+<h1>VENTO FILTER EXAMPLE</h1>",
+    data: {
+      basename: "vto-filter",
+      children: "<h1>VENTO FILTER EXAMPLE</h1>",
+      comp: [
+        "_components",
+        "_proxies",
+      ],
+      content: "default",
+      date: [],
+      mergedKeys: [
+        "tags",
+      ],
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      title: "vento filter example",
+      url: "/vto-filter/",
+    },
+    src: {
+      asset: false,
+      ext: ".page.js",
+      path: "/vto-filter",
+      remote: undefined,
+    },
+  },
+]
+`;

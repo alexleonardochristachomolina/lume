@@ -1,0 +1,171 @@
+export const snapshot = {};
+
+snapshot[`follow symlinks 1`] = `
+{
+  formats: [
+    {
+      engines: 0,
+      ext: ".page.toml",
+      loader: [AsyncFunction: toml],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".page.ts",
+      loader: [AsyncFunction: module],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".page.js",
+      loader: [AsyncFunction: module],
+      pageType: "page",
+    },
+    {
+      engines: 0,
+      ext: ".page.jsonc",
+      loader: [AsyncFunction: json],
+      pageType: "page",
+    },
+    {
+      engines: 0,
+      ext: ".page.json",
+      loader: [AsyncFunction: json],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: json],
+      engines: 0,
+      ext: ".json",
+      loader: [AsyncFunction: json],
+    },
+    {
+      dataLoader: [AsyncFunction: json],
+      engines: 0,
+      ext: ".jsonc",
+      loader: [AsyncFunction: json],
+    },
+    {
+      engines: 1,
+      ext: ".md",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".markdown",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: module],
+      engines: 1,
+      ext: ".js",
+      loader: [AsyncFunction: module],
+    },
+    {
+      dataLoader: [AsyncFunction: module],
+      engines: 1,
+      ext: ".ts",
+      loader: [AsyncFunction: module],
+    },
+    {
+      engines: 1,
+      ext: ".vento",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".vto",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: toml],
+      engines: 0,
+      ext: ".toml",
+      loader: [AsyncFunction: toml],
+    },
+    {
+      dataLoader: [AsyncFunction: yaml],
+      engines: 0,
+      ext: ".yaml",
+      loader: [AsyncFunction: yaml],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: yaml],
+      engines: 0,
+      ext: ".yml",
+      loader: [AsyncFunction: yaml],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".njk",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+  ],
+  src: [
+    "/",
+    "/_includes",
+    "/_includes/footer.njk",
+    "/_includes/layouts",
+    "/_includes/layouts/layout.njk",
+    "/index.md",
+  ],
+}
+`;
+
+snapshot[`follow symlinks 2`] = `[]`;
+
+snapshot[`follow symlinks 3`] = `
+[
+  {
+    content: "<!DOCTYPE html>
+<html>
+  <head>
+    <h1>Hello world</h1>
+  </head>
+  <body>
+    <p>Hello wold</p>
+
+
+    <footer>
+  End
+</footer>
+  </body>
+</html>",
+    data: {
+      basename: "index",
+      children: "<p>Hello wold</p>
+",
+      content: "Hello wold
+",
+      date: [],
+      layout: "layouts/layout.njk",
+      mergedKeys: [
+        "tags",
+      ],
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      title: "Hello world",
+      url: "/",
+    },
+    src: {
+      asset: false,
+      ext: ".md",
+      path: "/index",
+      remote: undefined,
+    },
+  },
+]
+`;

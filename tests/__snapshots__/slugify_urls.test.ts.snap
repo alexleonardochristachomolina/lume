@@ -1,0 +1,641 @@
+export const snapshot = {};
+
+snapshot[`slugify_urls plugin 1`] = `
+{
+  formats: [
+    {
+      engines: 0,
+      ext: ".page.toml",
+      loader: [AsyncFunction: toml],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".page.ts",
+      loader: [AsyncFunction: module],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".page.js",
+      loader: [AsyncFunction: module],
+      pageType: "page",
+    },
+    {
+      engines: 0,
+      ext: ".page.jsonc",
+      loader: [AsyncFunction: json],
+      pageType: "page",
+    },
+    {
+      engines: 0,
+      ext: ".page.json",
+      loader: [AsyncFunction: json],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: json],
+      engines: 0,
+      ext: ".json",
+      loader: [AsyncFunction: json],
+    },
+    {
+      dataLoader: [AsyncFunction: json],
+      engines: 0,
+      ext: ".jsonc",
+      loader: [AsyncFunction: json],
+    },
+    {
+      engines: 1,
+      ext: ".md",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".markdown",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: module],
+      engines: 1,
+      ext: ".js",
+      loader: [AsyncFunction: module],
+    },
+    {
+      dataLoader: [AsyncFunction: module],
+      engines: 1,
+      ext: ".ts",
+      loader: [AsyncFunction: module],
+    },
+    {
+      engines: 1,
+      ext: ".vento",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".vto",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: toml],
+      engines: 0,
+      ext: ".toml",
+      loader: [AsyncFunction: toml],
+    },
+    {
+      dataLoader: [AsyncFunction: yaml],
+      engines: 0,
+      ext: ".yaml",
+      loader: [AsyncFunction: yaml],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: yaml],
+      engines: 0,
+      ext: ".yml",
+      loader: [AsyncFunction: yaml],
+      pageType: "page",
+    },
+    {
+      copy: true,
+      engines: undefined,
+      ext: ".css",
+    },
+  ],
+  src: [
+    "/",
+    "/Chourizos ao viño.md",
+    "/Page 1.md",
+    "/UI Styles.css",
+    "/_headers",
+    "/generator.page.js",
+    "/page-3.md",
+    "/page-4.md",
+  ],
+}
+`;
+
+snapshot[`slugify_urls plugin 2`] = `
+[
+  {
+    entry: "/UI Styles.css",
+    flags: [],
+    outputPath: "/UI Styles.css",
+  },
+  {
+    entry: "/_headers",
+    flags: [],
+    outputPath: "/_headers",
+  },
+]
+`;
+
+snapshot[`slugify_urls plugin 3`] = `
+[
+  {
+    content: "<!DOCTYPE html>
+<p>Page 2</p>
+",
+    data: {
+      basename: "Chourizos ao viño",
+      children: "<p>Page 2</p>
+",
+      content: "Page 2
+",
+      date: [],
+      mergedKeys: [
+        "tags",
+      ],
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      url: "/chourizos-ao-vino/",
+    },
+    src: {
+      asset: false,
+      ext: ".md",
+      path: "/Chourizos ao viño",
+      remote: undefined,
+    },
+  },
+  {
+    content: "<!DOCTYPE html>
+<p>Page 1</p>
+",
+    data: {
+      basename: "Page 1",
+      children: "<p>Page 1</p>
+",
+      content: "Page 1
+",
+      date: [],
+      mergedKeys: [
+        "tags",
+      ],
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      url: "/page-1/",
+    },
+    src: {
+      asset: false,
+      ext: ".md",
+      path: "/Page 1",
+      remote: undefined,
+    },
+  },
+  {
+    content: "<!DOCTYPE html>
+Filloas con nocilla",
+    data: {
+      basename: "generator",
+      children: "Filloas con nocilla",
+      content: "Filloas con nocilla",
+      date: [],
+      mergedKeys: [
+        "tags",
+      ],
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      url: "/filloas-con-nocilla/",
+    },
+    src: {
+      asset: false,
+      ext: ".page.js",
+      path: "/generator[0]",
+      remote: undefined,
+    },
+  },
+  {
+    content: "<!DOCTYPE html>
+Foo",
+    data: {
+      basename: "generator",
+      children: "Foo",
+      content: "Foo",
+      date: [],
+      mergedKeys: [
+        "tags",
+      ],
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      url: "/803nfon-sfodij/-/",
+    },
+    src: {
+      asset: false,
+      ext: ".page.js",
+      path: "/generator[1]",
+      remote: undefined,
+    },
+  },
+  {
+    content: "<!DOCTYPE html>
+<p>Page 3</p>
+",
+    data: {
+      basename: "page-3",
+      children: "<p>Page 3</p>
+",
+      content: "Page 3
+",
+      date: [],
+      mergedKeys: [
+        "tags",
+      ],
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      url: "/paxina-numero/tres/",
+    },
+    src: {
+      asset: false,
+      ext: ".md",
+      path: "/page-3",
+      remote: undefined,
+    },
+  },
+  {
+    content: "<!DOCTYPE html>
+<p>Page 4</p>
+",
+    data: {
+      basename: "page-4",
+      children: "<p>Page 4</p>
+",
+      content: "Page 4
+",
+      date: [],
+      mergedKeys: [
+        "tags",
+      ],
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      url: "/paxina-4.html",
+    },
+    src: {
+      asset: false,
+      ext: ".md",
+      path: "/page-4",
+      remote: undefined,
+    },
+  },
+]
+`;
+
+snapshot[`slugify_urls plugin (static files) 1`] = `
+{
+  formats: [
+    {
+      engines: 0,
+      ext: ".page.toml",
+      loader: [AsyncFunction: toml],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".page.ts",
+      loader: [AsyncFunction: module],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".page.js",
+      loader: [AsyncFunction: module],
+      pageType: "page",
+    },
+    {
+      engines: 0,
+      ext: ".page.jsonc",
+      loader: [AsyncFunction: json],
+      pageType: "page",
+    },
+    {
+      engines: 0,
+      ext: ".page.json",
+      loader: [AsyncFunction: json],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: json],
+      engines: 0,
+      ext: ".json",
+      loader: [AsyncFunction: json],
+    },
+    {
+      dataLoader: [AsyncFunction: json],
+      engines: 0,
+      ext: ".jsonc",
+      loader: [AsyncFunction: json],
+    },
+    {
+      engines: 1,
+      ext: ".md",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".markdown",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: module],
+      engines: 1,
+      ext: ".js",
+      loader: [AsyncFunction: module],
+    },
+    {
+      dataLoader: [AsyncFunction: module],
+      engines: 1,
+      ext: ".ts",
+      loader: [AsyncFunction: module],
+    },
+    {
+      engines: 1,
+      ext: ".vento",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".vto",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: toml],
+      engines: 0,
+      ext: ".toml",
+      loader: [AsyncFunction: toml],
+    },
+    {
+      dataLoader: [AsyncFunction: yaml],
+      engines: 0,
+      ext: ".yaml",
+      loader: [AsyncFunction: yaml],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: yaml],
+      engines: 0,
+      ext: ".yml",
+      loader: [AsyncFunction: yaml],
+      pageType: "page",
+    },
+    {
+      copy: true,
+      engines: undefined,
+      ext: ".css",
+    },
+  ],
+  src: [
+    "/",
+    "/Chourizos ao viño.md",
+    "/Page 1.md",
+    "/UI Styles.css",
+    "/_headers",
+    "/generator.page.js",
+    "/page-3.md",
+    "/page-4.md",
+  ],
+}
+`;
+
+snapshot[`slugify_urls plugin (static files) 2`] = `
+[
+  {
+    entry: "/UI Styles.css",
+    flags: [],
+    outputPath: "/ui-styles.css",
+  },
+  {
+    entry: "/_headers",
+    flags: [],
+    outputPath: "/headers",
+  },
+]
+`;
+
+snapshot[`slugify_urls plugin (static files) 3`] = `
+[
+  {
+    content: "<!DOCTYPE html>
+<p>Page 2</p>
+",
+    data: {
+      basename: "Chourizos ao viño",
+      children: "<p>Page 2</p>
+",
+      content: "Page 2
+",
+      date: [],
+      mergedKeys: [
+        "tags",
+      ],
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      url: "/chourizos-ao-vino/",
+    },
+    src: {
+      asset: false,
+      ext: ".md",
+      path: "/Chourizos ao viño",
+      remote: undefined,
+    },
+  },
+  {
+    content: "<!DOCTYPE html>
+<p>Page 1</p>
+",
+    data: {
+      basename: "Page 1",
+      children: "<p>Page 1</p>
+",
+      content: "Page 1
+",
+      date: [],
+      mergedKeys: [
+        "tags",
+      ],
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      url: "/page-1/",
+    },
+    src: {
+      asset: false,
+      ext: ".md",
+      path: "/Page 1",
+      remote: undefined,
+    },
+  },
+  {
+    content: "<!DOCTYPE html>
+Filloas con nocilla",
+    data: {
+      basename: "generator",
+      children: "Filloas con nocilla",
+      content: "Filloas con nocilla",
+      date: [],
+      mergedKeys: [
+        "tags",
+      ],
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      url: "/filloas-con-nocilla/",
+    },
+    src: {
+      asset: false,
+      ext: ".page.js",
+      path: "/generator[0]",
+      remote: undefined,
+    },
+  },
+  {
+    content: "<!DOCTYPE html>
+Foo",
+    data: {
+      basename: "generator",
+      children: "Foo",
+      content: "Foo",
+      date: [],
+      mergedKeys: [
+        "tags",
+      ],
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      url: "/803nfon-sfodij/-/",
+    },
+    src: {
+      asset: false,
+      ext: ".page.js",
+      path: "/generator[1]",
+      remote: undefined,
+    },
+  },
+  {
+    content: "<!DOCTYPE html>
+<p>Page 3</p>
+",
+    data: {
+      basename: "page-3",
+      children: "<p>Page 3</p>
+",
+      content: "Page 3
+",
+      date: [],
+      mergedKeys: [
+        "tags",
+      ],
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      url: "/paxina-numero/tres/",
+    },
+    src: {
+      asset: false,
+      ext: ".md",
+      path: "/page-3",
+      remote: undefined,
+    },
+  },
+  {
+    content: "<!DOCTYPE html>
+<p>Page 4</p>
+",
+    data: {
+      basename: "page-4",
+      children: "<p>Page 4</p>
+",
+      content: "Page 4
+",
+      date: [],
+      mergedKeys: [
+        "tags",
+      ],
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      url: "/paxina-4.html",
+    },
+    src: {
+      asset: false,
+      ext: ".md",
+      path: "/page-4",
+      remote: undefined,
+    },
+  },
+]
+`;

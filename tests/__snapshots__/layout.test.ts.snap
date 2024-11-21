@@ -1,0 +1,274 @@
+export const snapshot = {};
+
+snapshot[`Layouts 1`] = `
+{
+  formats: [
+    {
+      engines: 0,
+      ext: ".page.toml",
+      loader: [AsyncFunction: toml],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".page.ts",
+      loader: [AsyncFunction: module],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".page.js",
+      loader: [AsyncFunction: module],
+      pageType: "page",
+    },
+    {
+      engines: 0,
+      ext: ".page.jsonc",
+      loader: [AsyncFunction: json],
+      pageType: "page",
+    },
+    {
+      engines: 0,
+      ext: ".page.json",
+      loader: [AsyncFunction: json],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: json],
+      engines: 0,
+      ext: ".json",
+      loader: [AsyncFunction: json],
+    },
+    {
+      dataLoader: [AsyncFunction: json],
+      engines: 0,
+      ext: ".jsonc",
+      loader: [AsyncFunction: json],
+    },
+    {
+      engines: 1,
+      ext: ".md",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".markdown",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: module],
+      engines: 1,
+      ext: ".js",
+      loader: [AsyncFunction: module],
+    },
+    {
+      dataLoader: [AsyncFunction: module],
+      engines: 1,
+      ext: ".ts",
+      loader: [AsyncFunction: module],
+    },
+    {
+      engines: 1,
+      ext: ".vento",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".vto",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: toml],
+      engines: 0,
+      ext: ".toml",
+      loader: [AsyncFunction: toml],
+    },
+    {
+      dataLoader: [AsyncFunction: yaml],
+      engines: 0,
+      ext: ".yaml",
+      loader: [AsyncFunction: yaml],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: yaml],
+      engines: 0,
+      ext: ".yml",
+      loader: [AsyncFunction: yaml],
+      pageType: "page",
+    },
+    {
+      assetLoader: [AsyncFunction: text],
+      engines: undefined,
+      ext: ".css",
+      pageType: "asset",
+    },
+  ],
+  src: [
+    "/",
+    "/_includes",
+    "/_includes/layout-2.vto",
+    "/_includes/layout-3.vto",
+    "/_includes/page.vto",
+    "/_includes/style.vto",
+    "/index.md",
+    "/page.md",
+    "/styles.2.css",
+    "/styles.css",
+  ],
+}
+`;
+
+snapshot[`Layouts 2`] = `[]`;
+
+snapshot[`Layouts 3`] = `
+[
+  {
+    content: "<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Hello world</h1>
+
+  </body>
+</html>",
+    data: {
+      basename: "index",
+      children: "<h1>Hello world</h1>
+",
+      content: "# Hello world
+",
+      date: [],
+      layout: "page.vto",
+      mergedKeys: [
+        "tags",
+      ],
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      url: "/",
+    },
+    src: {
+      asset: false,
+      ext: ".md",
+      path: "/index",
+      remote: undefined,
+    },
+  },
+  {
+    content: "<!DOCTYPE html>
+<h2>From Layout 3</h2>
+/file-1.css,/file-2.css,/file-3.css
+
+<h2>From Layout 2</h2>
+/file-1.css,/file-2.css
+
+<p>Content</p>
+
+
+",
+    data: {
+      basename: "page",
+      children: "<p>Content</p>
+",
+      content: "Content
+",
+      css_file: "Array(1)",
+      date: [],
+      layout: "layout-2.vto",
+      mergedKeys: [
+        "css_file",
+      ],
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      url: "/page/",
+    },
+    src: {
+      asset: false,
+      ext: ".md",
+      path: "/page",
+      remote: undefined,
+    },
+  },
+  {
+    content: "body {
+  color: blue;
+}",
+    data: {
+      basename: "styles",
+      content: "body {
+  color: blue;
+}",
+      date: [],
+      mergedKeys: [
+        "tags",
+      ],
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      url: "/styles.css",
+    },
+    src: {
+      asset: true,
+      ext: ".css",
+      path: "/styles",
+      remote: undefined,
+    },
+  },
+  {
+    content: "body.style {
+  p {
+  color: red;
+}
+}",
+    data: {
+      basename: "styles.2",
+      children: "p {
+  color: red;
+}",
+      content: "p {
+  color: red;
+}",
+      date: [],
+      layout: "style.vto",
+      mergedKeys: [
+        "tags",
+      ],
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      url: "/styles.2.css",
+    },
+    src: {
+      asset: true,
+      ext: ".css",
+      path: "/styles.2",
+      remote: undefined,
+    },
+  },
+]
+`;

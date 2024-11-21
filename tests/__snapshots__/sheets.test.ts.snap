@@ -1,0 +1,1297 @@
+export const snapshot = {};
+
+snapshot[`Sheets plugin 1`] = `
+{
+  formats: [
+    {
+      engines: 0,
+      ext: ".page.toml",
+      loader: [AsyncFunction: toml],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".page.ts",
+      loader: [AsyncFunction: module],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".page.js",
+      loader: [AsyncFunction: module],
+      pageType: "page",
+    },
+    {
+      engines: 0,
+      ext: ".page.jsonc",
+      loader: [AsyncFunction: json],
+      pageType: "page",
+    },
+    {
+      engines: 0,
+      ext: ".page.json",
+      loader: [AsyncFunction: json],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: json],
+      engines: 0,
+      ext: ".json",
+      loader: [AsyncFunction: json],
+    },
+    {
+      dataLoader: [AsyncFunction: json],
+      engines: 0,
+      ext: ".jsonc",
+      loader: [AsyncFunction: json],
+    },
+    {
+      engines: 1,
+      ext: ".md",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".markdown",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: module],
+      engines: 1,
+      ext: ".js",
+      loader: [AsyncFunction: module],
+    },
+    {
+      dataLoader: [AsyncFunction: module],
+      engines: 1,
+      ext: ".ts",
+      loader: [AsyncFunction: module],
+    },
+    {
+      engines: 1,
+      ext: ".vento",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".vto",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: toml],
+      engines: 0,
+      ext: ".toml",
+      loader: [AsyncFunction: toml],
+    },
+    {
+      dataLoader: [AsyncFunction: yaml],
+      engines: 0,
+      ext: ".yaml",
+      loader: [AsyncFunction: yaml],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: yaml],
+      engines: 0,
+      ext: ".yml",
+      loader: [AsyncFunction: yaml],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: loader],
+      engines: undefined,
+      ext: ".xlsx",
+    },
+    {
+      dataLoader: [AsyncFunction: loader],
+      engines: undefined,
+      ext: ".numbers",
+    },
+    {
+      dataLoader: [AsyncFunction: loader],
+      engines: undefined,
+      ext: ".csv",
+    },
+  ],
+  src: [
+    "/",
+    "/_data",
+    "/_data/attendance_numbers.numbers",
+    "/index.vto",
+  ],
+}
+`;
+
+snapshot[`Sheets plugin 2`] = `[]`;
+
+snapshot[`Sheets plugin 3`] = `
+[
+  {
+    content: "<!DOCTYPE html>
+<body>
+
+  <table>
+    <tr>
+      
+        <th>Day</th>
+      
+        <th>Benny 
+Ashley</th>
+      
+        <th>Tom Brooks</th>
+      
+        <th>Jimmy Cooney</th>
+      
+        <th>Sue 
+Daniels</th>
+      
+        <th>Berlinda Fong</th>
+      
+        <th>Terry Jones</th>
+      
+        <th>Angelina Little</th>
+      
+        <th>Linda Smith</th>
+      
+    </tr>
+
+    
+      <tr>
+        
+          <td>1</td>
+        
+          <td>true</td>
+        
+          <td>true</td>
+        
+          <td>true</td>
+        
+          <td>true</td>
+        
+          <td>true</td>
+        
+          <td>true</td>
+        
+          <td>false</td>
+        
+          <td>true</td>
+        
+      </tr>
+    
+      <tr>
+        
+          <td>2</td>
+        
+          <td>true</td>
+        
+          <td>true</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+      </tr>
+    
+      <tr>
+        
+          <td>3</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+      </tr>
+    
+      <tr>
+        
+          <td>4</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+      </tr>
+    
+      <tr>
+        
+          <td>5</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+      </tr>
+    
+      <tr>
+        
+          <td>6</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+      </tr>
+    
+      <tr>
+        
+          <td>7</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+      </tr>
+    
+      <tr>
+        
+          <td>8</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+      </tr>
+    
+      <tr>
+        
+          <td>9</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+      </tr>
+    
+      <tr>
+        
+          <td>0</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+      </tr>
+    
+      <tr>
+        
+          <td>11</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+      </tr>
+    
+      <tr>
+        
+          <td>12</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+      </tr>
+    
+      <tr>
+        
+          <td>13</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+      </tr>
+    
+      <tr>
+        
+          <td>14</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+      </tr>
+    
+      <tr>
+        
+          <td>15</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+      </tr>
+    
+      <tr>
+        
+          <td>16</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+      </tr>
+    
+      <tr>
+        
+          <td>17</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+      </tr>
+    
+      <tr>
+        
+          <td>18</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+      </tr>
+    
+      <tr>
+        
+          <td>19</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+      </tr>
+    
+      <tr>
+        
+          <td>20</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+      </tr>
+    
+      <tr>
+        
+          <td>21</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+      </tr>
+    
+      <tr>
+        
+          <td>22</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+      </tr>
+    
+      <tr>
+        
+          <td>23</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+      </tr>
+    
+      <tr>
+        
+          <td>Total</td>
+        
+          <td>2</td>
+        
+          <td>2</td>
+        
+          <td>1</td>
+        
+          <td>1</td>
+        
+          <td>1</td>
+        
+          <td>1</td>
+        
+          <td>0</td>
+        
+          <td>1</td>
+        
+      </tr>
+    
+  </table>
+</body>
+",
+    data: {
+      attendance_numbers: "Array(24)",
+      basename: "index",
+      children: "<body>
+
+  <table>
+    <tr>
+      
+        <th>Day</th>
+      
+        <th>Benny 
+Ashley</th>
+      
+        <th>Tom Brooks</th>
+      
+        <th>Jimmy Cooney</th>
+      
+        <th>Sue 
+Daniels</th>
+      
+        <th>Berlinda Fong</th>
+      
+        <th>Terry Jones</th>
+      
+        <th>Angelina Little</th>
+      
+        <th>Linda Smith</th>
+      
+    </tr>
+
+    
+      <tr>
+        
+          <td>1</td>
+        
+          <td>true</td>
+        
+          <td>true</td>
+        
+          <td>true</td>
+        
+          <td>true</td>
+        
+          <td>true</td>
+        
+          <td>true</td>
+        
+          <td>false</td>
+        
+          <td>true</td>
+        
+      </tr>
+    
+      <tr>
+        
+          <td>2</td>
+        
+          <td>true</td>
+        
+          <td>true</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+      </tr>
+    
+      <tr>
+        
+          <td>3</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+      </tr>
+    
+      <tr>
+        
+          <td>4</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+      </tr>
+    
+      <tr>
+        
+          <td>5</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+      </tr>
+    
+      <tr>
+        
+          <td>6</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+      </tr>
+    
+      <tr>
+        
+          <td>7</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+      </tr>
+    
+      <tr>
+        
+          <td>8</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+      </tr>
+    
+      <tr>
+        
+          <td>9</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+      </tr>
+    
+      <tr>
+        
+          <td>0</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+      </tr>
+    
+      <tr>
+        
+          <td>11</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+      </tr>
+    
+      <tr>
+        
+          <td>12</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+      </tr>
+    
+      <tr>
+        
+          <td>13</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+      </tr>
+    
+      <tr>
+        
+          <td>14</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+      </tr>
+    
+      <tr>
+        
+          <td>15</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+      </tr>
+    
+      <tr>
+        
+          <td>16</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+      </tr>
+    
+      <tr>
+        
+          <td>17</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+      </tr>
+    
+      <tr>
+        
+          <td>18</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+      </tr>
+    
+      <tr>
+        
+          <td>19</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+      </tr>
+    
+      <tr>
+        
+          <td>20</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+      </tr>
+    
+      <tr>
+        
+          <td>21</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+      </tr>
+    
+      <tr>
+        
+          <td>22</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+      </tr>
+    
+      <tr>
+        
+          <td>23</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+          <td>false</td>
+        
+      </tr>
+    
+      <tr>
+        
+          <td>Total</td>
+        
+          <td>2</td>
+        
+          <td>2</td>
+        
+          <td>1</td>
+        
+          <td>1</td>
+        
+          <td>1</td>
+        
+          <td>1</td>
+        
+          <td>0</td>
+        
+          <td>1</td>
+        
+      </tr>
+    
+  </table>
+</body>
+",
+      content: "<body>
+
+  <table>
+    <tr>
+      {{ for key, column of attendance_numbers[0] }}
+        <th>{{ key }}</th>
+      {{ /for }}
+    </tr>
+
+    {{ for row of attendance_numbers }}
+      <tr>
+        {{ for key, column of row }}
+          <td>{{ column }}</td>
+        {{ /for }}
+      </tr>
+    {{ /for }}
+  </table>
+</body>
+",
+      date: [],
+      mergedKeys: [
+        "tags",
+      ],
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      url: "/",
+    },
+    src: {
+      asset: false,
+      ext: ".vto",
+      path: "/index",
+      remote: undefined,
+    },
+  },
+]
+`;

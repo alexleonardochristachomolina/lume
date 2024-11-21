@@ -1,0 +1,1895 @@
+export const snapshot = {};
+
+snapshot[`nav plugin 1`] = `
+{
+  formats: [
+    {
+      engines: 0,
+      ext: ".page.toml",
+      loader: [AsyncFunction: toml],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".page.ts",
+      loader: [AsyncFunction: module],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".page.js",
+      loader: [AsyncFunction: module],
+      pageType: "page",
+    },
+    {
+      engines: 0,
+      ext: ".page.jsonc",
+      loader: [AsyncFunction: json],
+      pageType: "page",
+    },
+    {
+      engines: 0,
+      ext: ".page.json",
+      loader: [AsyncFunction: json],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: json],
+      engines: 0,
+      ext: ".json",
+      loader: [AsyncFunction: json],
+    },
+    {
+      dataLoader: [AsyncFunction: json],
+      engines: 0,
+      ext: ".jsonc",
+      loader: [AsyncFunction: json],
+    },
+    {
+      engines: 1,
+      ext: ".md",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".markdown",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: module],
+      engines: 1,
+      ext: ".js",
+      loader: [AsyncFunction: module],
+    },
+    {
+      dataLoader: [AsyncFunction: module],
+      engines: 1,
+      ext: ".ts",
+      loader: [AsyncFunction: module],
+    },
+    {
+      engines: 1,
+      ext: ".vento",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".vto",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: toml],
+      engines: 0,
+      ext: ".toml",
+      loader: [AsyncFunction: toml],
+    },
+    {
+      dataLoader: [AsyncFunction: yaml],
+      engines: 0,
+      ext: ".yaml",
+      loader: [AsyncFunction: yaml],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: yaml],
+      engines: 0,
+      ext: ".yml",
+      loader: [AsyncFunction: yaml],
+      pageType: "page",
+    },
+  ],
+  src: [
+    "/",
+    "/_data.yml",
+    "/_includes",
+    "/_includes/main.vto",
+    "/_includes/step.vto",
+    "/docs",
+    "/docs.md",
+    "/docs/about-docs.md",
+    "/docs/pages",
+    "/docs/pages.md",
+    "/docs/pages/first.md",
+    "/docs/pages/second.md",
+    "/index.vto",
+  ],
+}
+`;
+
+snapshot[`nav plugin 2`] = `[]`;
+
+snapshot[`nav plugin 3`] = `
+[
+  {
+    content: '<!DOCTYPE html>
+<html>
+  <head>
+    <title>Docs</title>
+  </head>
+
+  <body>
+    <nav>
+      <ul style="display: flex; list-style: none; gap: 1em; padding: 0;">
+        
+        <li><a href="/">Home</a></li>
+        
+        <li><a href="">防災</a></li>
+        
+        <li><a href="/%E9%98%B2%E7%81%BD/esolia-bousai-links/">Docs</a></li>
+        
+      </ul>
+    </nav>
+
+    <h1>Docs</h1>
+
+    <nav>
+      <ul>
+        <li>
+          
+<strong>docs</strong>
+<ul>
+  <li>
+    
+<a href="/docs/pages/">About pages (0)</a>
+<ul>
+  <li>
+    
+<a href="/docs/pages/second/">Pages second (0)</a>
+
+  </li>
+  <li>
+    
+<a href="/docs/pages/first/">Pages first (1)</a>
+
+  </li>
+</ul>
+
+  </li>
+  <li>
+    
+<a href="/docs/about-docs/">About docs (1)</a>
+
+  </li>
+</ul>
+
+        </li>
+        <li>
+          
+<strong>防災</strong>
+<ul>
+  <li>
+    
+<a href="/%E9%98%B2%E7%81%BD/esolia-bousai-links/">Docs</a>
+
+  </li>
+</ul>
+
+        </li>
+      </ul>
+    </nav>
+
+    <nav>
+      <ul>
+        <li>
+          
+<strong>docs</strong>
+<ul>
+  <li>
+    
+<a href="/docs/about-docs/">About docs (1)</a>
+
+  </li>
+  <li>
+    
+<strong>pages</strong>
+<ul>
+  <li>
+    
+<a href="/docs/pages/second/">Pages second (0)</a>
+
+  </li>
+</ul>
+
+  </li>
+</ul>
+
+        </li>
+      </ul>
+
+      
+      
+
+      
+      
+        <a href="/docs/pages/">Previous page</a>
+      
+    </nav>
+  </body>
+</html>
+',
+    data: {
+      basename: "docs",
+      children: "",
+      content: "",
+      date: [],
+      layout: "main.vto",
+      mergedKeys: [
+        "tags",
+      ],
+      nav: [],
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      title: "Docs",
+      url: "/%E9%98%B2%E7%81%BD/esolia-bousai-links/",
+    },
+    src: {
+      asset: false,
+      ext: ".md",
+      path: "/docs",
+      remote: undefined,
+    },
+  },
+  {
+    content: '<!DOCTYPE html>
+<html>
+  <head>
+    <title>About docs (1)</title>
+  </head>
+
+  <body>
+    <nav>
+      <ul style="display: flex; list-style: none; gap: 1em; padding: 0;">
+        
+        <li><a href="/">Home</a></li>
+        
+        <li><a href="">docs</a></li>
+        
+        <li><a href="/docs/about-docs/">About docs (1)</a></li>
+        
+      </ul>
+    </nav>
+
+    <h1>About docs (1)</h1>
+
+    <nav>
+      <ul>
+        <li>
+          
+<strong>docs</strong>
+<ul>
+  <li>
+    
+<a href="/docs/pages/">About pages (0)</a>
+<ul>
+  <li>
+    
+<a href="/docs/pages/second/">Pages second (0)</a>
+
+  </li>
+  <li>
+    
+<a href="/docs/pages/first/">Pages first (1)</a>
+
+  </li>
+</ul>
+
+  </li>
+  <li>
+    
+<a href="/docs/about-docs/">About docs (1)</a>
+
+  </li>
+</ul>
+
+        </li>
+        <li>
+          
+<strong>防災</strong>
+<ul>
+  <li>
+    
+<a href="/%E9%98%B2%E7%81%BD/esolia-bousai-links/">Docs</a>
+
+  </li>
+</ul>
+
+        </li>
+      </ul>
+    </nav>
+
+    <nav>
+      <ul>
+        <li>
+          
+<strong>docs</strong>
+<ul>
+  <li>
+    
+<a href="/docs/about-docs/">About docs (1)</a>
+
+  </li>
+  <li>
+    
+<strong>pages</strong>
+<ul>
+  <li>
+    
+<a href="/docs/pages/second/">Pages second (0)</a>
+
+  </li>
+</ul>
+
+  </li>
+</ul>
+
+        </li>
+      </ul>
+
+      
+      
+
+      
+        <a href="/docs/pages/">Next page</a>
+      
+      
+    </nav>
+  </body>
+</html>
+',
+    data: {
+      basename: "about-docs",
+      children: "",
+      content: "",
+      date: [],
+      layout: "main.vto",
+      menu: true,
+      mergedKeys: [
+        "tags",
+      ],
+      nav: [],
+      order: 1,
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      title: "About docs (1)",
+      url: "/docs/about-docs/",
+    },
+    src: {
+      asset: false,
+      ext: ".md",
+      path: "/docs/about-docs",
+      remote: undefined,
+    },
+  },
+  {
+    content: '<!DOCTYPE html>
+<html>
+  <head>
+    <title>About pages (0)</title>
+  </head>
+
+  <body>
+    <nav>
+      <ul style="display: flex; list-style: none; gap: 1em; padding: 0;">
+        
+        <li><a href="/">Home</a></li>
+        
+        <li><a href="">docs</a></li>
+        
+        <li><a href="/docs/pages/">About pages (0)</a></li>
+        
+      </ul>
+    </nav>
+
+    <h1>About pages (0)</h1>
+
+    <nav>
+      <ul>
+        <li>
+          
+<strong>docs</strong>
+<ul>
+  <li>
+    
+<a href="/docs/pages/">About pages (0)</a>
+<ul>
+  <li>
+    
+<a href="/docs/pages/second/">Pages second (0)</a>
+
+  </li>
+  <li>
+    
+<a href="/docs/pages/first/">Pages first (1)</a>
+
+  </li>
+</ul>
+
+  </li>
+  <li>
+    
+<a href="/docs/about-docs/">About docs (1)</a>
+
+  </li>
+</ul>
+
+        </li>
+        <li>
+          
+<strong>防災</strong>
+<ul>
+  <li>
+    
+<a href="/%E9%98%B2%E7%81%BD/esolia-bousai-links/">Docs</a>
+
+  </li>
+</ul>
+
+        </li>
+      </ul>
+    </nav>
+
+    <nav>
+      <ul>
+        <li>
+          
+<strong>docs</strong>
+<ul>
+  <li>
+    
+<a href="/docs/about-docs/">About docs (1)</a>
+
+  </li>
+  <li>
+    
+<strong>pages</strong>
+<ul>
+  <li>
+    
+<a href="/docs/pages/second/">Pages second (0)</a>
+
+  </li>
+</ul>
+
+  </li>
+</ul>
+
+        </li>
+      </ul>
+
+      
+      
+
+      
+        <a href="/docs/pages/first/">Next page</a>
+      
+      
+        <a href="/docs/about-docs/">Previous page</a>
+      
+    </nav>
+  </body>
+</html>
+',
+    data: {
+      basename: "pages",
+      children: "",
+      content: "",
+      date: [],
+      layout: "main.vto",
+      mergedKeys: [
+        "tags",
+      ],
+      nav: [],
+      order: 0,
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      title: "About pages (0)",
+      url: "/docs/pages/",
+    },
+    src: {
+      asset: false,
+      ext: ".md",
+      path: "/docs/pages",
+      remote: undefined,
+    },
+  },
+  {
+    content: '<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pages first (1)</title>
+  </head>
+
+  <body>
+    <nav>
+      <ul style="display: flex; list-style: none; gap: 1em; padding: 0;">
+        
+        <li><a href="/">Home</a></li>
+        
+        <li><a href="">docs</a></li>
+        
+        <li><a href="/docs/pages/">About pages (0)</a></li>
+        
+        <li><a href="/docs/pages/first/">Pages first (1)</a></li>
+        
+      </ul>
+    </nav>
+
+    <h1>Pages first (1)</h1>
+
+    <nav>
+      <ul>
+        <li>
+          
+<strong>docs</strong>
+<ul>
+  <li>
+    
+<a href="/docs/pages/">About pages (0)</a>
+<ul>
+  <li>
+    
+<a href="/docs/pages/second/">Pages second (0)</a>
+
+  </li>
+  <li>
+    
+<a href="/docs/pages/first/">Pages first (1)</a>
+
+  </li>
+</ul>
+
+  </li>
+  <li>
+    
+<a href="/docs/about-docs/">About docs (1)</a>
+
+  </li>
+</ul>
+
+        </li>
+        <li>
+          
+<strong>防災</strong>
+<ul>
+  <li>
+    
+<a href="/%E9%98%B2%E7%81%BD/esolia-bousai-links/">Docs</a>
+
+  </li>
+</ul>
+
+        </li>
+      </ul>
+    </nav>
+
+    <nav>
+      <ul>
+        <li>
+          
+<strong>docs</strong>
+<ul>
+  <li>
+    
+<a href="/docs/about-docs/">About docs (1)</a>
+
+  </li>
+  <li>
+    
+<strong>pages</strong>
+<ul>
+  <li>
+    
+<a href="/docs/pages/second/">Pages second (0)</a>
+
+  </li>
+</ul>
+
+  </li>
+</ul>
+
+        </li>
+      </ul>
+
+      
+      
+
+      
+        <a href="/docs/pages/second/">Next page</a>
+      
+      
+        <a href="/docs/about-docs/">Previous page</a>
+      
+    </nav>
+  </body>
+</html>
+',
+    data: {
+      basename: "first",
+      children: "",
+      content: "",
+      date: [],
+      layout: "main.vto",
+      mergedKeys: [
+        "tags",
+      ],
+      nav: [],
+      order: 1,
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      title: "Pages first (1)",
+      url: "/docs/pages/first/",
+    },
+    src: {
+      asset: false,
+      ext: ".md",
+      path: "/docs/pages/first",
+      remote: undefined,
+    },
+  },
+  {
+    content: '<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pages second (0)</title>
+  </head>
+
+  <body>
+    <nav>
+      <ul style="display: flex; list-style: none; gap: 1em; padding: 0;">
+        
+        <li><a href="/">Home</a></li>
+        
+        <li><a href="">docs</a></li>
+        
+        <li><a href="/docs/pages/">About pages (0)</a></li>
+        
+        <li><a href="/docs/pages/second/">Pages second (0)</a></li>
+        
+      </ul>
+    </nav>
+
+    <h1>Pages second (0)</h1>
+
+    <nav>
+      <ul>
+        <li>
+          
+<strong>docs</strong>
+<ul>
+  <li>
+    
+<a href="/docs/pages/">About pages (0)</a>
+<ul>
+  <li>
+    
+<a href="/docs/pages/second/">Pages second (0)</a>
+
+  </li>
+  <li>
+    
+<a href="/docs/pages/first/">Pages first (1)</a>
+
+  </li>
+</ul>
+
+  </li>
+  <li>
+    
+<a href="/docs/about-docs/">About docs (1)</a>
+
+  </li>
+</ul>
+
+        </li>
+        <li>
+          
+<strong>防災</strong>
+<ul>
+  <li>
+    
+<a href="/%E9%98%B2%E7%81%BD/esolia-bousai-links/">Docs</a>
+
+  </li>
+</ul>
+
+        </li>
+      </ul>
+    </nav>
+
+    <nav>
+      <ul>
+        <li>
+          
+<strong>docs</strong>
+<ul>
+  <li>
+    
+<a href="/docs/about-docs/">About docs (1)</a>
+
+  </li>
+  <li>
+    
+<strong>pages</strong>
+<ul>
+  <li>
+    
+<a href="/docs/pages/second/">Pages second (0)</a>
+
+  </li>
+</ul>
+
+  </li>
+</ul>
+
+        </li>
+      </ul>
+
+      
+      
+
+      
+        <a href="/%E9%98%B2%E7%81%BD/esolia-bousai-links/">Next page</a>
+      
+      
+        <a href="/docs/pages/first/">Previous page</a>
+      
+    </nav>
+  </body>
+</html>
+',
+    data: {
+      basename: "second",
+      children: "",
+      content: "",
+      date: [],
+      layout: "main.vto",
+      menu: true,
+      mergedKeys: [
+        "tags",
+      ],
+      nav: [],
+      order: 0,
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      title: "Pages second (0)",
+      url: "/docs/pages/second/",
+    },
+    src: {
+      asset: false,
+      ext: ".md",
+      path: "/docs/pages/second",
+      remote: undefined,
+    },
+  },
+  {
+    content: '<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+  </head>
+
+  <body>
+    <nav>
+      <ul style="display: flex; list-style: none; gap: 1em; padding: 0;">
+        
+        <li><a href="/">Home</a></li>
+        
+      </ul>
+    </nav>
+
+    <h1>Home</h1>
+
+    <nav>
+      <ul>
+        <li>
+          
+<strong>docs</strong>
+<ul>
+  <li>
+    
+<a href="/docs/pages/">About pages (0)</a>
+<ul>
+  <li>
+    
+<a href="/docs/pages/second/">Pages second (0)</a>
+
+  </li>
+  <li>
+    
+<a href="/docs/pages/first/">Pages first (1)</a>
+
+  </li>
+</ul>
+
+  </li>
+  <li>
+    
+<a href="/docs/about-docs/">About docs (1)</a>
+
+  </li>
+</ul>
+
+        </li>
+        <li>
+          
+<strong>防災</strong>
+<ul>
+  <li>
+    
+<a href="/%E9%98%B2%E7%81%BD/esolia-bousai-links/">Docs</a>
+
+  </li>
+</ul>
+
+        </li>
+      </ul>
+    </nav>
+
+    <nav>
+      <ul>
+        <li>
+          
+<strong>docs</strong>
+<ul>
+  <li>
+    
+<a href="/docs/about-docs/">About docs (1)</a>
+
+  </li>
+  <li>
+    
+<strong>pages</strong>
+<ul>
+  <li>
+    
+<a href="/docs/pages/second/">Pages second (0)</a>
+
+  </li>
+</ul>
+
+  </li>
+</ul>
+
+        </li>
+      </ul>
+
+      
+      
+
+      
+        <a href="/docs/about-docs/">Next page</a>
+      
+      
+    </nav>
+  </body>
+</html>
+',
+    data: {
+      basename: "index",
+      children: "",
+      content: "",
+      date: [],
+      layout: "main.vto",
+      mergedKeys: [
+        "tags",
+      ],
+      nav: [],
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      title: "Home",
+      url: "/",
+    },
+    src: {
+      asset: false,
+      ext: ".vto",
+      path: "/index",
+      remote: undefined,
+    },
+  },
+]
+`;
+
+snapshot[`nav plugin with pretty urls disabled 1`] = `
+{
+  formats: [
+    {
+      engines: 0,
+      ext: ".page.toml",
+      loader: [AsyncFunction: toml],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".page.ts",
+      loader: [AsyncFunction: module],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".page.js",
+      loader: [AsyncFunction: module],
+      pageType: "page",
+    },
+    {
+      engines: 0,
+      ext: ".page.jsonc",
+      loader: [AsyncFunction: json],
+      pageType: "page",
+    },
+    {
+      engines: 0,
+      ext: ".page.json",
+      loader: [AsyncFunction: json],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: json],
+      engines: 0,
+      ext: ".json",
+      loader: [AsyncFunction: json],
+    },
+    {
+      dataLoader: [AsyncFunction: json],
+      engines: 0,
+      ext: ".jsonc",
+      loader: [AsyncFunction: json],
+    },
+    {
+      engines: 1,
+      ext: ".md",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".markdown",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: module],
+      engines: 1,
+      ext: ".js",
+      loader: [AsyncFunction: module],
+    },
+    {
+      dataLoader: [AsyncFunction: module],
+      engines: 1,
+      ext: ".ts",
+      loader: [AsyncFunction: module],
+    },
+    {
+      engines: 1,
+      ext: ".vento",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      engines: 1,
+      ext: ".vto",
+      loader: [AsyncFunction: text],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: toml],
+      engines: 0,
+      ext: ".toml",
+      loader: [AsyncFunction: toml],
+    },
+    {
+      dataLoader: [AsyncFunction: yaml],
+      engines: 0,
+      ext: ".yaml",
+      loader: [AsyncFunction: yaml],
+      pageType: "page",
+    },
+    {
+      dataLoader: [AsyncFunction: yaml],
+      engines: 0,
+      ext: ".yml",
+      loader: [AsyncFunction: yaml],
+      pageType: "page",
+    },
+  ],
+  src: [
+    "/",
+    "/_data.yml",
+    "/_includes",
+    "/_includes/main.vto",
+    "/_includes/step.vto",
+    "/docs",
+    "/docs.md",
+    "/docs/about-docs.md",
+    "/docs/pages",
+    "/docs/pages.md",
+    "/docs/pages/first.md",
+    "/docs/pages/second.md",
+    "/index.vto",
+  ],
+}
+`;
+
+snapshot[`nav plugin with pretty urls disabled 2`] = `[]`;
+
+snapshot[`nav plugin with pretty urls disabled 3`] = `
+[
+  {
+    content: '<!DOCTYPE html>
+<html>
+  <head>
+    <title>Docs</title>
+  </head>
+
+  <body>
+    <nav>
+      <ul style="display: flex; list-style: none; gap: 1em; padding: 0;">
+        
+        <li><a href="/index.html">Home</a></li>
+        
+        <li><a href="">防災</a></li>
+        
+        <li><a href="/%E9%98%B2%E7%81%BD/esolia-bousai-links/">Docs</a></li>
+        
+      </ul>
+    </nav>
+
+    <h1>Docs</h1>
+
+    <nav>
+      <ul>
+        <li>
+          
+<strong>docs</strong>
+<ul>
+  <li>
+    
+<a href="/docs/pages.html">About pages (0)</a>
+<ul>
+  <li>
+    
+<a href="/docs/pages/second.html">Pages second (0)</a>
+
+  </li>
+  <li>
+    
+<a href="/docs/pages/first.html">Pages first (1)</a>
+
+  </li>
+</ul>
+
+  </li>
+  <li>
+    
+<a href="/docs/about-docs.html">About docs (1)</a>
+
+  </li>
+</ul>
+
+        </li>
+        <li>
+          
+<strong>防災</strong>
+<ul>
+  <li>
+    
+<a href="/%E9%98%B2%E7%81%BD/esolia-bousai-links/">Docs</a>
+
+  </li>
+</ul>
+
+        </li>
+      </ul>
+    </nav>
+
+    <nav>
+      <ul>
+        <li>
+          
+<strong>docs</strong>
+<ul>
+  <li>
+    
+<a href="/docs/about-docs.html">About docs (1)</a>
+
+  </li>
+  <li>
+    
+<strong>pages</strong>
+<ul>
+  <li>
+    
+<a href="/docs/pages/second.html">Pages second (0)</a>
+
+  </li>
+</ul>
+
+  </li>
+</ul>
+
+        </li>
+      </ul>
+
+      
+      
+
+      
+      
+        <a href="/docs/pages.html">Previous page</a>
+      
+    </nav>
+  </body>
+</html>
+',
+    data: {
+      basename: "docs",
+      children: "",
+      content: "",
+      date: [],
+      layout: "main.vto",
+      mergedKeys: [
+        "tags",
+      ],
+      nav: [],
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      title: "Docs",
+      url: "/%E9%98%B2%E7%81%BD/esolia-bousai-links/",
+    },
+    src: {
+      asset: false,
+      ext: ".md",
+      path: "/docs",
+      remote: undefined,
+    },
+  },
+  {
+    content: '<!DOCTYPE html>
+<html>
+  <head>
+    <title>About docs (1)</title>
+  </head>
+
+  <body>
+    <nav>
+      <ul style="display: flex; list-style: none; gap: 1em; padding: 0;">
+        
+        <li><a href="/index.html">Home</a></li>
+        
+        <li><a href="">docs</a></li>
+        
+        <li><a href="/docs/about-docs.html">About docs (1)</a></li>
+        
+      </ul>
+    </nav>
+
+    <h1>About docs (1)</h1>
+
+    <nav>
+      <ul>
+        <li>
+          
+<strong>docs</strong>
+<ul>
+  <li>
+    
+<a href="/docs/pages.html">About pages (0)</a>
+<ul>
+  <li>
+    
+<a href="/docs/pages/second.html">Pages second (0)</a>
+
+  </li>
+  <li>
+    
+<a href="/docs/pages/first.html">Pages first (1)</a>
+
+  </li>
+</ul>
+
+  </li>
+  <li>
+    
+<a href="/docs/about-docs.html">About docs (1)</a>
+
+  </li>
+</ul>
+
+        </li>
+        <li>
+          
+<strong>防災</strong>
+<ul>
+  <li>
+    
+<a href="/%E9%98%B2%E7%81%BD/esolia-bousai-links/">Docs</a>
+
+  </li>
+</ul>
+
+        </li>
+      </ul>
+    </nav>
+
+    <nav>
+      <ul>
+        <li>
+          
+<strong>docs</strong>
+<ul>
+  <li>
+    
+<a href="/docs/about-docs.html">About docs (1)</a>
+
+  </li>
+  <li>
+    
+<strong>pages</strong>
+<ul>
+  <li>
+    
+<a href="/docs/pages/second.html">Pages second (0)</a>
+
+  </li>
+</ul>
+
+  </li>
+</ul>
+
+        </li>
+      </ul>
+
+      
+      
+
+      
+        <a href="/docs/pages.html">Next page</a>
+      
+      
+    </nav>
+  </body>
+</html>
+',
+    data: {
+      basename: "about-docs",
+      children: "",
+      content: "",
+      date: [],
+      layout: "main.vto",
+      menu: true,
+      mergedKeys: [
+        "tags",
+      ],
+      nav: [],
+      order: 1,
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      title: "About docs (1)",
+      url: "/docs/about-docs.html",
+    },
+    src: {
+      asset: false,
+      ext: ".md",
+      path: "/docs/about-docs",
+      remote: undefined,
+    },
+  },
+  {
+    content: '<!DOCTYPE html>
+<html>
+  <head>
+    <title>About pages (0)</title>
+  </head>
+
+  <body>
+    <nav>
+      <ul style="display: flex; list-style: none; gap: 1em; padding: 0;">
+        
+        <li><a href="/index.html">Home</a></li>
+        
+        <li><a href="">docs</a></li>
+        
+        <li><a href="/docs/pages.html">About pages (0)</a></li>
+        
+      </ul>
+    </nav>
+
+    <h1>About pages (0)</h1>
+
+    <nav>
+      <ul>
+        <li>
+          
+<strong>docs</strong>
+<ul>
+  <li>
+    
+<a href="/docs/pages.html">About pages (0)</a>
+<ul>
+  <li>
+    
+<a href="/docs/pages/second.html">Pages second (0)</a>
+
+  </li>
+  <li>
+    
+<a href="/docs/pages/first.html">Pages first (1)</a>
+
+  </li>
+</ul>
+
+  </li>
+  <li>
+    
+<a href="/docs/about-docs.html">About docs (1)</a>
+
+  </li>
+</ul>
+
+        </li>
+        <li>
+          
+<strong>防災</strong>
+<ul>
+  <li>
+    
+<a href="/%E9%98%B2%E7%81%BD/esolia-bousai-links/">Docs</a>
+
+  </li>
+</ul>
+
+        </li>
+      </ul>
+    </nav>
+
+    <nav>
+      <ul>
+        <li>
+          
+<strong>docs</strong>
+<ul>
+  <li>
+    
+<a href="/docs/about-docs.html">About docs (1)</a>
+
+  </li>
+  <li>
+    
+<strong>pages</strong>
+<ul>
+  <li>
+    
+<a href="/docs/pages/second.html">Pages second (0)</a>
+
+  </li>
+</ul>
+
+  </li>
+</ul>
+
+        </li>
+      </ul>
+
+      
+      
+
+      
+        <a href="/docs/pages/first.html">Next page</a>
+      
+      
+        <a href="/docs/about-docs.html">Previous page</a>
+      
+    </nav>
+  </body>
+</html>
+',
+    data: {
+      basename: "pages",
+      children: "",
+      content: "",
+      date: [],
+      layout: "main.vto",
+      mergedKeys: [
+        "tags",
+      ],
+      nav: [],
+      order: 0,
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      title: "About pages (0)",
+      url: "/docs/pages.html",
+    },
+    src: {
+      asset: false,
+      ext: ".md",
+      path: "/docs/pages",
+      remote: undefined,
+    },
+  },
+  {
+    content: '<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pages first (1)</title>
+  </head>
+
+  <body>
+    <nav>
+      <ul style="display: flex; list-style: none; gap: 1em; padding: 0;">
+        
+        <li><a href="/index.html">Home</a></li>
+        
+        <li><a href="">docs</a></li>
+        
+        <li><a href="/docs/pages.html">About pages (0)</a></li>
+        
+        <li><a href="/docs/pages/first.html">Pages first (1)</a></li>
+        
+      </ul>
+    </nav>
+
+    <h1>Pages first (1)</h1>
+
+    <nav>
+      <ul>
+        <li>
+          
+<strong>docs</strong>
+<ul>
+  <li>
+    
+<a href="/docs/pages.html">About pages (0)</a>
+<ul>
+  <li>
+    
+<a href="/docs/pages/second.html">Pages second (0)</a>
+
+  </li>
+  <li>
+    
+<a href="/docs/pages/first.html">Pages first (1)</a>
+
+  </li>
+</ul>
+
+  </li>
+  <li>
+    
+<a href="/docs/about-docs.html">About docs (1)</a>
+
+  </li>
+</ul>
+
+        </li>
+        <li>
+          
+<strong>防災</strong>
+<ul>
+  <li>
+    
+<a href="/%E9%98%B2%E7%81%BD/esolia-bousai-links/">Docs</a>
+
+  </li>
+</ul>
+
+        </li>
+      </ul>
+    </nav>
+
+    <nav>
+      <ul>
+        <li>
+          
+<strong>docs</strong>
+<ul>
+  <li>
+    
+<a href="/docs/about-docs.html">About docs (1)</a>
+
+  </li>
+  <li>
+    
+<strong>pages</strong>
+<ul>
+  <li>
+    
+<a href="/docs/pages/second.html">Pages second (0)</a>
+
+  </li>
+</ul>
+
+  </li>
+</ul>
+
+        </li>
+      </ul>
+
+      
+      
+
+      
+        <a href="/docs/pages/second.html">Next page</a>
+      
+      
+        <a href="/docs/about-docs.html">Previous page</a>
+      
+    </nav>
+  </body>
+</html>
+',
+    data: {
+      basename: "first",
+      children: "",
+      content: "",
+      date: [],
+      layout: "main.vto",
+      mergedKeys: [
+        "tags",
+      ],
+      nav: [],
+      order: 1,
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      title: "Pages first (1)",
+      url: "/docs/pages/first.html",
+    },
+    src: {
+      asset: false,
+      ext: ".md",
+      path: "/docs/pages/first",
+      remote: undefined,
+    },
+  },
+  {
+    content: '<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pages second (0)</title>
+  </head>
+
+  <body>
+    <nav>
+      <ul style="display: flex; list-style: none; gap: 1em; padding: 0;">
+        
+        <li><a href="/index.html">Home</a></li>
+        
+        <li><a href="">docs</a></li>
+        
+        <li><a href="/docs/pages.html">About pages (0)</a></li>
+        
+        <li><a href="/docs/pages/second.html">Pages second (0)</a></li>
+        
+      </ul>
+    </nav>
+
+    <h1>Pages second (0)</h1>
+
+    <nav>
+      <ul>
+        <li>
+          
+<strong>docs</strong>
+<ul>
+  <li>
+    
+<a href="/docs/pages.html">About pages (0)</a>
+<ul>
+  <li>
+    
+<a href="/docs/pages/second.html">Pages second (0)</a>
+
+  </li>
+  <li>
+    
+<a href="/docs/pages/first.html">Pages first (1)</a>
+
+  </li>
+</ul>
+
+  </li>
+  <li>
+    
+<a href="/docs/about-docs.html">About docs (1)</a>
+
+  </li>
+</ul>
+
+        </li>
+        <li>
+          
+<strong>防災</strong>
+<ul>
+  <li>
+    
+<a href="/%E9%98%B2%E7%81%BD/esolia-bousai-links/">Docs</a>
+
+  </li>
+</ul>
+
+        </li>
+      </ul>
+    </nav>
+
+    <nav>
+      <ul>
+        <li>
+          
+<strong>docs</strong>
+<ul>
+  <li>
+    
+<a href="/docs/about-docs.html">About docs (1)</a>
+
+  </li>
+  <li>
+    
+<strong>pages</strong>
+<ul>
+  <li>
+    
+<a href="/docs/pages/second.html">Pages second (0)</a>
+
+  </li>
+</ul>
+
+  </li>
+</ul>
+
+        </li>
+      </ul>
+
+      
+      
+
+      
+        <a href="/%E9%98%B2%E7%81%BD/esolia-bousai-links/">Next page</a>
+      
+      
+        <a href="/docs/pages/first.html">Previous page</a>
+      
+    </nav>
+  </body>
+</html>
+',
+    data: {
+      basename: "second",
+      children: "",
+      content: "",
+      date: [],
+      layout: "main.vto",
+      menu: true,
+      mergedKeys: [
+        "tags",
+      ],
+      nav: [],
+      order: 0,
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      title: "Pages second (0)",
+      url: "/docs/pages/second.html",
+    },
+    src: {
+      asset: false,
+      ext: ".md",
+      path: "/docs/pages/second",
+      remote: undefined,
+    },
+  },
+  {
+    content: '<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+  </head>
+
+  <body>
+    <nav>
+      <ul style="display: flex; list-style: none; gap: 1em; padding: 0;">
+        
+      </ul>
+    </nav>
+
+    <h1>Home</h1>
+
+    <nav>
+      <ul>
+        <li>
+          
+<strong>docs</strong>
+<ul>
+  <li>
+    
+<a href="/docs/pages.html">About pages (0)</a>
+<ul>
+  <li>
+    
+<a href="/docs/pages/second.html">Pages second (0)</a>
+
+  </li>
+  <li>
+    
+<a href="/docs/pages/first.html">Pages first (1)</a>
+
+  </li>
+</ul>
+
+  </li>
+  <li>
+    
+<a href="/docs/about-docs.html">About docs (1)</a>
+
+  </li>
+</ul>
+
+        </li>
+        <li>
+          
+<strong>防災</strong>
+<ul>
+  <li>
+    
+<a href="/%E9%98%B2%E7%81%BD/esolia-bousai-links/">Docs</a>
+
+  </li>
+</ul>
+
+        </li>
+      </ul>
+    </nav>
+
+    <nav>
+      <ul>
+        <li>
+          
+<strong>docs</strong>
+<ul>
+  <li>
+    
+<a href="/docs/about-docs.html">About docs (1)</a>
+
+  </li>
+  <li>
+    
+<strong>pages</strong>
+<ul>
+  <li>
+    
+<a href="/docs/pages/second.html">Pages second (0)</a>
+
+  </li>
+</ul>
+
+  </li>
+</ul>
+
+        </li>
+      </ul>
+
+      
+      
+
+      
+      
+    </nav>
+  </body>
+</html>
+',
+    data: {
+      basename: "index",
+      children: "",
+      content: "",
+      date: [],
+      layout: "main.vto",
+      mergedKeys: [
+        "tags",
+      ],
+      nav: [],
+      page: [
+        "src",
+        "data",
+        "asset",
+      ],
+      paginate: "paginate",
+      search: [],
+      tags: "Array(0)",
+      title: "Home",
+      url: "/index.html",
+    },
+    src: {
+      asset: false,
+      ext: ".vto",
+      path: "/index",
+      remote: undefined,
+    },
+  },
+]
+`;
